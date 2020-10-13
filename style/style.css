@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #f6e2ff;
+  background: #f8eefd;
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
@@ -12,7 +16,7 @@ a {
 }
 
 header {
-  background: white;
+  font-size: 1.1em;
   height: 50px;
   padding: 0px 30px;
   border-radius: 30px;
@@ -36,7 +40,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background: #0076c1;
+  background: #d16eff;
   color: white;
 }
 
@@ -82,6 +86,7 @@ header nav a:hover {
   border-bottom: 2px solid #4e005c;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  letter-spacing: 1px;
 }
 
 .heroSection .left button:hover {
@@ -101,5 +106,119 @@ header nav a:hover {
   width: 600px;
   margin-top: -5%;
   background: white;
+}
+
+.servicesSection {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicesSection .container {
+  height: 80%;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.servicesSection .container .service {
+  height: 360px;
+  width: 360px;
+  border-radius: 45px;
+}
+
+.servicesSection .container .service:nth-child(1) {
+  background: none;
+  color: #d16eff;
+  text-align: center;
+}
+
+.servicesSection .container .service:nth-child(1) h2 {
+  margin-top: 40%;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.servicesSection .container .service:nth-child(2) {
+  background: url(../img/services/1.jpg) 26% 10%;
+}
+
+.servicesSection .container .service:nth-child(3) {
+  background: url(../img/services/2.png) no-repeat 40% 60%;
+}
+
+.servicesSection .container .service:nth-child(4) {
+  background: url(../img/services/3.jpg) no-repeat 40% 60%;
+}
+
+.servicesSection .container .service:nth-child(5) {
+  background: url(../img/services/4.jpg) no-repeat 40% 80%;
+}
+
+.servicesSection .container .service:nth-child(6) {
+  background: url(../img/services/5.jpg) no-repeat 60% 60%;
+}
+
+.servicesSection .container .service .content {
+  background: #7ab4dbda;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+  border-radius: 45px;
+  position: relative;
+  text-align: center;
+}
+
+.servicesSection .container .service .content h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-top: 35%;
+  margin-bottom: 10%;
+}
+
+.servicesSection .container .service .content a {
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.815);
+  border-radius: 30px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.servicesSection .container .service .content a:hover {
+  font-size: 1.1em;
+  background: white;
+}
+
+.servicesSection .container .service .content a:active {
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.815);
+}
+
+.servicesSection .container .service:nth-child(3) .content,
+.servicesSection .container .service:nth-child(5) .content {
+  background: #e19fffd2;
+}
+
+.servicesSection .container .service:nth-child(3) .content a,
+.servicesSection .container .service:nth-child(5) .content a {
+  color: #8f2cbd;
+}
+
+.servicesSection .container .service:nth-child(5) .content h3 {
+  margin-top: 41%;
+  margin-bottom: 13%;
 }
 /*# sourceMappingURL=style.css.map */
