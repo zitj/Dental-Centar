@@ -17,7 +17,7 @@ a{
     color: $dental-centar-blue;
 }
 header{
-    // background: white;
+    // background: rgb(255, 255, 255);
     font-size: 1.1em;
     height: 50px;
     padding: 0px 30px;
@@ -27,6 +27,23 @@ header{
     display: flex;
     line-height: 50px;
     justify-content: space-between;
+    .logo{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        svg{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            margin-top: 8px;
+        }
+        p{
+            font-size: 1.2em;
+            line-height: 10px;
+            margin-left: 8px;
+            display: flex;
+        }
+    }
     nav{
         a{
             padding: 8px 15px;
@@ -85,10 +102,14 @@ header{
         }
     }
     .right{
-        height: 600px;
-        width: 600px;
-        margin-top: -5%;
-        background: white;
+        
+        img{
+        opacity: .7;            
+        margin-top: -150px;    
+        margin-right: -150px;    
+        height: 800px;    
+        width: 800px;    
+        }
     }
 }
 .servicesSection{

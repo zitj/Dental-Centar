@@ -31,6 +31,34 @@ header {
           justify-content: space-between;
 }
 
+header .logo {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .logo svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+header .logo p {
+  font-size: 1.2em;
+  line-height: 10px;
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header nav a {
   padding: 8px 15px;
   border-radius: 20px;
@@ -101,11 +129,12 @@ header nav a:hover {
           transform: scale(1);
 }
 
-.heroSection .right {
-  height: 600px;
-  width: 600px;
-  margin-top: -5%;
-  background: white;
+.heroSection .right img {
+  opacity: .7;
+  margin-top: -150px;
+  margin-right: -150px;
+  height: 800px;
+  width: 800px;
 }
 
 .servicesSection {
