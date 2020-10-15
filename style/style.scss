@@ -1,5 +1,5 @@
 @import "./variables";
-
+@import "./include-media.css";
 html{
     scroll-behavior: smooth;
 }
@@ -17,7 +17,7 @@ a{
     color: $dental-centar-blue;
 }
 header{
-    // background: rgb(255, 255, 255);
+   
     font-size: 1.1em;
     height: 50px;
     padding: 0px 30px;
@@ -27,6 +27,9 @@ header{
     display: flex;
     line-height: 50px;
     justify-content: space-between;
+    @media (max-width: 1500px) {
+       background: rgb(255, 255, 255);
+        }
     .logo{
         cursor: pointer;
         display: flex;
@@ -57,26 +60,55 @@ header{
         }
     }
 }
+.section{
+    height: 100vh;
+    h2{
+        text-align: center;
+        color: $dental-centar-pink;
+        font-size: 3em;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+}
 .heroSection{
     display: flex;
-    justify-content: space-between;
-    height: 100vh;
+    // justify-content: space-between;
+    position: relative;
     width: 70%;
     margin: 12.5% auto 0%;
+    @media (max-width: 1280px) {
+        margin: 15% auto 0%;
+        width: 75%;    
+    } 
+    @media (max-width: 1180px) {
+        width: 80%;    
+    } 
+    
     .left{
        h1{
            font-size: 3.5em;
            margin-bottom: 0;
            font-weight: 600;
+           @media (max-width: 1500px) {
+           font-size: 2.8em;
+             }
+             
        }
-       h2{
+       h3{
            font-size: 3em;
            font-weight: 400;
-           margin-top: -5px;
            margin-bottom: 0;
+           margin-top: -5px;
+           @media (max-width: 1500px) {
+            font-size: 2.3em;
+              }  
            &:nth-of-type(2){
                font-size: 2.5em;
                margin: 0px 0 15px;
+               font-weight: 300;
+               @media (max-width: 1500px) {
+                font-size: 1.8em;
+                } 
            }
        }
        button{
@@ -91,6 +123,9 @@ header{
            border-bottom: 1px solid rgb(78, 0, 92);
            transition: .2s ease-in-out;
            letter-spacing: 1px;
+           @media (max-width: 1500px) {
+            font-size: .7em;
+            } 
             &:hover{
                 opacity: .8;
                 transform: scale(1.03);
@@ -106,27 +141,47 @@ header{
         img{
         opacity: .7;            
         margin-top: -150px;    
-        margin-right: -150px;    
+        margin-right: -150px;  
+        position: absolute;  
         height: 800px;    
-        width: 800px;    
+        width: 800px;
+        @media (max-width: 1500px) {
+            height: 550px;
+            width: 550px;
+             }
+        @media (max-width: 1280px) {
+            height: 500px;
+            width: 500px;
+            }         
         }
     }
 }
 .servicesSection{
-    height: 100vh;
     display: flex;
     justify-content: center;
+    @media (max-width: 1500px) {
+        margin-top: -10%;
+        } 
     .container{
         height: 80%;
         width: 65%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        @media (max-width: 1500px) {
+            width: 90%;
+            } 
+        @media (max-width: 1280px) {
+            height: 90%;
+            } 
         .service{
             height: 360px;
             width: 360px;
             border-radius: 45px;
-         
+            @media (max-width: 1500px) {
+            height: 340px;
+            width: 340px;
+                } 
             &:nth-child(1){
                 background: none;
                 color: $dental-centar-pink;
@@ -203,14 +258,10 @@ header{
   
 }
 .workHoursSection{
-    height: 100vh;
     text-align: center;
-    h2{
-        color: $dental-centar-pink;
-        font-size: 3em;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
+    @media (max-width: 1500px) {
+        margin-top: 7%;
+             } 
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
         position: relative;
@@ -219,6 +270,9 @@ header{
         padding: 130px 0;
         margin:0 auto;
         overflow: hidden;
+        @media (max-width: 1500px) {
+           width: 90%;
+                } 
         img{
             position: absolute;
             top: -20%;
@@ -237,14 +291,7 @@ header{
     }
 }
 .locationSection{
-    height: 100vh;
     text-align: center;
-    h2{
-        color: $dental-centar-pink;
-        font-size: 3em;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
     .container{
     background-image: linear-gradient(30deg, $dental-light-pink -40%, $dental-light-blue);
     position: relative;
@@ -255,6 +302,9 @@ header{
     overflow: hidden;
     display: flex;
     justify-content: space-around;
+    @media (max-width: 1500px) {
+      width: 90%;
+             } 
     img{
         position: absolute;
         left: -5%;
@@ -262,12 +312,11 @@ header{
         opacity: .1;
     }
     .text{
-        margin-top: 15%;
+        margin-top: 14%;
         margin-left: 5%;
-    
     p{
         color: white;
-        font-size: 2em;
+        font-size: 2.5em;
         margin-bottom: 0;
         text-shadow: 0px 1px #3a023f;
         &:nth-child(2){
@@ -287,14 +336,7 @@ header{
 }
 }
 .contactSection{
-    height: 100vh;
-    h2{
-        text-align: center;
-        color: $dental-centar-pink;
-        font-size: 3em;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
+    
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
         position: relative;
@@ -303,6 +345,9 @@ header{
         padding: 100px 0;
         margin:0 auto;
         overflow: hidden;
+        @media (max-width: 1500px) {
+            width: 90%;
+                   } 
         .backgroundPhoto{
             position: absolute;
             right: 0%;

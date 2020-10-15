@@ -1,3 +1,4 @@
+@import url(d:\ADEEPLEARN\Projekti\Web Design\Dental Centar Leskovac\website\style\include-media.css);
 html {
   scroll-behavior: smooth;
 }
@@ -29,6 +30,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1500px) {
+  header {
+    background: white;
+  }
 }
 
 header .logo {
@@ -72,16 +79,38 @@ header nav a:hover {
   color: white;
 }
 
+.section {
+  height: 100vh;
+}
+
+.section h2 {
+  text-align: center;
+  color: #d16eff;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 .heroSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100vh;
+  position: relative;
   width: 70%;
   margin: 12.5% auto 0%;
+}
+
+@media (max-width: 1280px) {
+  .heroSection {
+    margin: 15% auto 0%;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .heroSection {
+    width: 80%;
+  }
 }
 
 .heroSection .left h1 {
@@ -90,16 +119,35 @@ header nav a:hover {
   font-weight: 600;
 }
 
-.heroSection .left h2 {
-  font-size: 3em;
-  font-weight: 400;
-  margin-top: -5px;
-  margin-bottom: 0;
+@media (max-width: 1500px) {
+  .heroSection .left h1 {
+    font-size: 2.8em;
+  }
 }
 
-.heroSection .left h2:nth-of-type(2) {
+.heroSection .left h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: -5px;
+}
+
+@media (max-width: 1500px) {
+  .heroSection .left h3 {
+    font-size: 2.3em;
+  }
+}
+
+.heroSection .left h3:nth-of-type(2) {
   font-size: 2.5em;
   margin: 0px 0 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 1500px) {
+  .heroSection .left h3:nth-of-type(2) {
+    font-size: 1.8em;
+  }
 }
 
 .heroSection .left button {
@@ -115,6 +163,12 @@ header nav a:hover {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1500px) {
+  .heroSection .left button {
+    font-size: .7em;
+  }
 }
 
 .heroSection .left button:hover {
@@ -133,18 +187,38 @@ header nav a:hover {
   opacity: .7;
   margin-top: -150px;
   margin-right: -150px;
+  position: absolute;
   height: 800px;
   width: 800px;
 }
 
+@media (max-width: 1500px) {
+  .heroSection .right img {
+    height: 550px;
+    width: 550px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .heroSection .right img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
 .servicesSection {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1500px) {
+  .servicesSection {
+    margin-top: -10%;
+  }
 }
 
 .servicesSection .container {
@@ -159,10 +233,29 @@ header nav a:hover {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1500px) {
+  .servicesSection .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .servicesSection .container {
+    height: 90%;
+  }
+}
+
 .servicesSection .container .service {
   height: 360px;
   width: 360px;
   border-radius: 45px;
+}
+
+@media (max-width: 1500px) {
+  .servicesSection .container .service {
+    height: 340px;
+    width: 340px;
+  }
 }
 
 .servicesSection .container .service:nth-child(1) {
@@ -252,15 +345,13 @@ header nav a:hover {
 }
 
 .workHoursSection {
-  height: 100vh;
   text-align: center;
 }
 
-.workHoursSection h2 {
-  color: #d16eff;
-  font-size: 3em;
-  font-weight: 400;
-  letter-spacing: 2px;
+@media (max-width: 1500px) {
+  .workHoursSection {
+    margin-top: 7%;
+  }
 }
 
 .workHoursSection .container {
@@ -271,6 +362,12 @@ header nav a:hover {
   padding: 130px 0;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 1500px) {
+  .workHoursSection .container {
+    width: 90%;
+  }
 }
 
 .workHoursSection .container img {
@@ -291,15 +388,7 @@ header nav a:hover {
 }
 
 .locationSection {
-  height: 100vh;
   text-align: center;
-}
-
-.locationSection h2 {
-  color: #d16eff;
-  font-size: 3em;
-  font-weight: 400;
-  letter-spacing: 2px;
 }
 
 .locationSection .container {
@@ -317,6 +406,12 @@ header nav a:hover {
       justify-content: space-around;
 }
 
+@media (max-width: 1500px) {
+  .locationSection .container {
+    width: 90%;
+  }
+}
+
 .locationSection .container img {
   position: absolute;
   left: -5%;
@@ -325,13 +420,13 @@ header nav a:hover {
 }
 
 .locationSection .container .text {
-  margin-top: 15%;
+  margin-top: 14%;
   margin-left: 5%;
 }
 
 .locationSection .container .text p {
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0;
   text-shadow: 0px 1px #3a023f;
 }
@@ -349,18 +444,6 @@ header nav a:hover {
   overflow: hidden;
 }
 
-.contactSection {
-  height: 100vh;
-}
-
-.contactSection h2 {
-  text-align: center;
-  color: #d16eff;
-  font-size: 3em;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
 .contactSection .container {
   background-image: linear-gradient(120deg, #7ab4dbda 40%, #e19fffd2);
   position: relative;
@@ -369,6 +452,12 @@ header nav a:hover {
   padding: 100px 0;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 1500px) {
+  .contactSection .container {
+    width: 90%;
+  }
 }
 
 .contactSection .container .backgroundPhoto {
