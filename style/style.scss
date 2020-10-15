@@ -72,7 +72,6 @@ header{
 }
 .heroSection{
     display: flex;
-    // justify-content: space-between;
     position: relative;
     width: 70%;
     margin: 12.5% auto 0%;
@@ -140,8 +139,8 @@ header{
         
         img{
         opacity: .7;            
-        margin-top: -150px;    
-        margin-right: -150px;  
+        top: -20%;
+        right: -16%;
         position: absolute;  
         height: 800px;    
         width: 800px;
@@ -153,14 +152,23 @@ header{
             height: 500px;
             width: 500px;
             }         
-        }
-    }
+        
+        @media (max-width: 1090px) {
+            height: 450px;
+            width: 450px;
+            margin-top: -100px;
+            right: 10%;
+            }         
+    }}
 }
 .servicesSection{
     display: flex;
     justify-content: center;
     @media (max-width: 1500px) {
-        margin-top: -10%;
+       
+        } 
+    @media (max-width: 1090px) {
+        margin-top: -30%;
         } 
     .container{
         height: 80%;
@@ -170,6 +178,7 @@ header{
         flex-wrap: wrap;
         @media (max-width: 1500px) {
             width: 90%;
+            height: 90%;
             } 
         @media (max-width: 1280px) {
             height: 90%;
@@ -177,10 +186,18 @@ header{
         .service{
             height: 360px;
             width: 360px;
+            margin: 10px;
             border-radius: 45px;
             @media (max-width: 1500px) {
             height: 340px;
             width: 340px;
+                } 
+            @media (max-width: 1140px) {
+            height: 320px;
+            width: 320px;
+                } 
+            @media (max-width: 1090px) {
+            
                 } 
             &:nth-child(1){
                 background: none;
@@ -260,7 +277,8 @@ header{
 .workHoursSection{
     text-align: center;
     @media (max-width: 1500px) {
-        margin-top: 7%;
+        margin-top: 15%;
+        margin-bottom: 10%;
              } 
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
@@ -272,6 +290,7 @@ header{
         overflow: hidden;
         @media (max-width: 1500px) {
            width: 90%;
+           
                 } 
         img{
             position: absolute;
@@ -336,7 +355,9 @@ header{
 }
 }
 .contactSection{
-    
+    @media (max-width: 1500px) {
+       margin-top: 10%;
+               } 
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
         position: relative;
@@ -345,6 +366,7 @@ header{
         padding: 100px 0;
         margin:0 auto;
         overflow: hidden;
+        height: 300px;
         @media (max-width: 1500px) {
             width: 90%;
                    } 
@@ -356,7 +378,8 @@ header{
             z-index: 0;
         }
         .text{
-         margin-left: 9%;   
+         margin-left: 9%;
+         margin-top: 2.5%;   
          z-index: 1;
         p{
             font-size: 2em;

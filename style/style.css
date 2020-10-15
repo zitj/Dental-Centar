@@ -185,8 +185,8 @@ header nav a:hover {
 
 .heroSection .right img {
   opacity: .7;
-  margin-top: -150px;
-  margin-right: -150px;
+  top: -20%;
+  right: -16%;
   position: absolute;
   height: 800px;
   width: 800px;
@@ -206,6 +206,15 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 1090px) {
+  .heroSection .right img {
+    height: 450px;
+    width: 450px;
+    margin-top: -100px;
+    right: 10%;
+  }
+}
+
 .servicesSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,9 +224,9 @@ header nav a:hover {
           justify-content: center;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1090px) {
   .servicesSection {
-    margin-top: -10%;
+    margin-top: -30%;
   }
 }
 
@@ -236,6 +245,7 @@ header nav a:hover {
 @media (max-width: 1500px) {
   .servicesSection .container {
     width: 90%;
+    height: 90%;
   }
 }
 
@@ -248,6 +258,7 @@ header nav a:hover {
 .servicesSection .container .service {
   height: 360px;
   width: 360px;
+  margin: 10px;
   border-radius: 45px;
 }
 
@@ -255,6 +266,13 @@ header nav a:hover {
   .servicesSection .container .service {
     height: 340px;
     width: 340px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .servicesSection .container .service {
+    height: 320px;
+    width: 320px;
   }
 }
 
@@ -350,7 +368,8 @@ header nav a:hover {
 
 @media (max-width: 1500px) {
   .workHoursSection {
-    margin-top: 7%;
+    margin-top: 15%;
+    margin-bottom: 10%;
   }
 }
 
@@ -444,6 +463,12 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 1500px) {
+  .contactSection {
+    margin-top: 10%;
+  }
+}
+
 .contactSection .container {
   background-image: linear-gradient(120deg, #7ab4dbda 40%, #e19fffd2);
   position: relative;
@@ -452,6 +477,7 @@ header nav a:hover {
   padding: 100px 0;
   margin: 0 auto;
   overflow: hidden;
+  height: 300px;
 }
 
 @media (max-width: 1500px) {
@@ -470,6 +496,7 @@ header nav a:hover {
 
 .contactSection .container .text {
   margin-left: 9%;
+  margin-top: 2.5%;
   z-index: 1;
 }
 
