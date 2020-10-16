@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #f8e9ff;
+  background: #dae5ff;
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
@@ -30,12 +30,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media (max-width: 1500px) {
-  header {
-    background: white;
-  }
 }
 
 header .logo {
@@ -79,15 +73,28 @@ header nav a:hover {
   color: white;
 }
 
+@media (max-width: 800px) {
+  header nav a {
+    display: none;
+  }
+}
+
 .section {
   height: 100vh;
 }
 
+@media (max-width: 800px) {
+  .section {
+    height: 70vh;
+  }
+}
+
 .section h2 {
   text-align: center;
-  color: #d16eff;
+  color: #0076c1;
+  opacity: .7;
   font-size: 3em;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
@@ -113,6 +120,27 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  .heroSection {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60vh;
+    margin-bottom: 18%;
+  }
+}
+
+.heroSection .left {
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .heroSection .left {
+    margin-top: 25%;
+  }
+}
+
 .heroSection .left h1 {
   font-size: 3.5em;
   margin-bottom: 0;
@@ -120,6 +148,18 @@ header nav a:hover {
 }
 
 @media (max-width: 1500px) {
+  .heroSection .left h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 1030px) {
+  .heroSection .left h1 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 1030px) {
   .heroSection .left h1 {
     font-size: 2.8em;
   }
@@ -138,6 +178,18 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 1030px) {
+  .heroSection .left h3 {
+    font-size: 1.9em;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroSection .left h3 {
+    font-size: 2.3em;
+  }
+}
+
 .heroSection .left h3:nth-of-type(2) {
   font-size: 2.5em;
   margin: 0px 0 15px;
@@ -145,6 +197,18 @@ header nav a:hover {
 }
 
 @media (max-width: 1500px) {
+  .heroSection .left h3:nth-of-type(2) {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1030px) {
+  .heroSection .left h3:nth-of-type(2) {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 800px) {
   .heroSection .left h3:nth-of-type(2) {
     font-size: 1.8em;
   }
@@ -184,7 +248,7 @@ header nav a:hover {
 }
 
 .heroSection .right img {
-  opacity: .7;
+  opacity: .6;
   top: -20%;
   right: -16%;
   position: absolute;
@@ -210,8 +274,26 @@ header nav a:hover {
   .heroSection .right img {
     height: 450px;
     width: 450px;
-    margin-top: -100px;
-    right: 10%;
+    right: -8%;
+    top: -15%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .heroSection .right img {
+    height: 450px;
+    width: 450px;
+    right: -10%;
+    top: -10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroSection .right img {
+    height: 300px;
+    width: 300px;
+    top: -12.5%;
+    right: 27%;
   }
 }
 
@@ -252,6 +334,12 @@ header nav a:hover {
 @media (max-width: 1280px) {
   .servicesSection .container {
     height: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .servicesSection .container {
+    height: 90vh;
   }
 }
 
@@ -310,7 +398,7 @@ header nav a:hover {
 }
 
 .servicesSection .container .service .content {
-  background: #7ab4dbda;
+  background: #e19fffd2;
   height: 90%;
   width: 90%;
   padding: 5%;
@@ -335,6 +423,7 @@ header nav a:hover {
   border-radius: 30px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  color: #8f2cbd;
 }
 
 .servicesSection .container .service .content a:hover {
@@ -349,12 +438,12 @@ header nav a:hover {
 
 .servicesSection .container .service:nth-child(3) .content,
 .servicesSection .container .service:nth-child(5) .content {
-  background: #e19fffd2;
+  background: #7ab4dbda;
 }
 
 .servicesSection .container .service:nth-child(3) .content a,
 .servicesSection .container .service:nth-child(5) .content a {
-  color: #8f2cbd;
+  color: #0076c1;
 }
 
 .servicesSection .container .service:nth-child(5) .content h3 {
@@ -373,12 +462,19 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  .workHoursSection {
+    margin-top: 60%;
+    margin-bottom: 0%;
+  }
+}
+
 .workHoursSection .container {
   background-image: linear-gradient(120deg, #7ab4dbda 40%, #e19fffd2);
   position: relative;
   width: 63%;
   border-radius: 35px;
-  padding: 130px 0;
+  padding: 100px 0;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -393,21 +489,43 @@ header nav a:hover {
   position: absolute;
   top: -20%;
   left: 50%;
-  opacity: .1;
+  opacity: .08;
   z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .workHoursSection .container img {
+    width: 600px;
+    height: 600px;
+    top: -10%;
+    left: 55%;
+    opacity: .07;
+  }
 }
 
 .workHoursSection .container .text {
   padding: 20px 0;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 400;
   z-index: 2;
   text-shadow: 0px 1px #3a023f;
 }
 
+@media (max-width: 800px) {
+  .workHoursSection .container .text {
+    font-size: 1.5em;
+  }
+}
+
 .locationSection {
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .locationSection {
+    margin-top: -10%;
+  }
 }
 
 .locationSection .container {
@@ -431,6 +549,14 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  .locationSection .container {
+    height: 700px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .locationSection .container img {
   position: absolute;
   left: -5%;
@@ -441,6 +567,13 @@ header nav a:hover {
 .locationSection .container .text {
   margin-top: 14%;
   margin-left: 5%;
+}
+
+@media (max-width: 800px) {
+  .locationSection .container .text {
+    margin-top: 4%;
+    margin-left: 0;
+  }
 }
 
 .locationSection .container .text p {
@@ -463,9 +596,21 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  .locationSection .container .map {
+    margin-top: -5%;
+  }
+}
+
 @media (max-width: 1500px) {
   .contactSection {
     margin-top: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .contactSection {
+    text-align: center;
   }
 }
 
@@ -494,10 +639,22 @@ header nav a:hover {
   z-index: 0;
 }
 
+@media (max-width: 800px) {
+  .contactSection .container .backgroundPhoto {
+    opacity: .1;
+  }
+}
+
 .contactSection .container .text {
   margin-left: 9%;
   margin-top: 2.5%;
   z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .contactSection .container .text {
+    margin-left: 0;
+  }
 }
 
 .contactSection .container .text p {

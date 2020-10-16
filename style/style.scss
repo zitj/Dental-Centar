@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background: #f8e9ff;
+    background: #dae5ff;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
@@ -28,7 +28,7 @@ header{
     line-height: 50px;
     justify-content: space-between;
     @media (max-width: 1500px) {
-       background: rgb(255, 255, 255);
+    //background: rgb(255, 255, 255);
         }
     .logo{
         cursor: pointer;
@@ -57,16 +57,23 @@ header{
                 background: $dental-centar-pink;
                 color: white;
             }
+            @media (max-width: 800px) {
+               display: none;
+                 }
         }
     }
 }
 .section{
     height: 100vh;
+    @media (max-width: 800px) {
+        height: 70vh;
+          } 
     h2{
         text-align: center;
-        color: $dental-centar-pink;
+        color: $dental-centar-blue;
+        opacity: .7;
         font-size: 3em;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 2px;
     }
 }
@@ -81,14 +88,30 @@ header{
     } 
     @media (max-width: 1180px) {
         width: 80%;    
-    } 
+    }
+    @media (max-width: 800px) {
+        text-align: center;
+        justify-content: center;
+        height: 60vh;
+        margin-bottom: 18%;
+          } 
     
     .left{
+        z-index: 1;
+        @media (max-width: 800px) {
+            margin-top: 25%;
+              }
        h1{
            font-size: 3.5em;
            margin-bottom: 0;
            font-weight: 600;
            @media (max-width: 1500px) {
+           font-size: 2.8em;
+             }
+           @media (max-width: 1030px) {
+           font-size: 2.4em;
+             }
+           @media (max-width: 1030px) {
            font-size: 2.8em;
              }
              
@@ -101,11 +124,23 @@ header{
            @media (max-width: 1500px) {
             font-size: 2.3em;
               }  
+            @media (max-width: 1030px) {
+            font-size: 1.9em;
+            }
+            @media (max-width: 800px) {
+            font-size: 2.3em;
+            }
            &:nth-of-type(2){
                font-size: 2.5em;
                margin: 0px 0 15px;
                font-weight: 300;
                @media (max-width: 1500px) {
+                font-size: 1.8em;
+                } 
+               @media (max-width: 1030px) {
+                font-size: 1.6em;
+                } 
+               @media (max-width: 800px) {
                 font-size: 1.8em;
                 } 
            }
@@ -138,7 +173,7 @@ header{
     .right{
         
         img{
-        opacity: .7;            
+        opacity: .6;            
         top: -20%;
         right: -16%;
         position: absolute;  
@@ -156,8 +191,20 @@ header{
         @media (max-width: 1090px) {
             height: 450px;
             width: 450px;
-            margin-top: -100px;
-            right: 10%;
+            right: -8%;
+            top:-15%;
+            }         
+        @media (max-width: 1030px) {
+            height: 450px;
+            width: 450px;
+            right: -10%;
+            top:-10%;
+            }         
+        @media (max-width: 800px) {
+            height: 300px;
+            width: 300px;
+            top: -12.5%;
+            right: 27%;
             }         
     }}
 }
@@ -183,6 +230,9 @@ header{
         @media (max-width: 1280px) {
             height: 90%;
             } 
+        @media (max-width: 800px) {
+            height: 90vh;
+            }     
         .service{
             height: 360px;
             width: 360px;
@@ -226,7 +276,7 @@ header{
                 background: url(../img/services/5.jpg) no-repeat 60% 60%;
              }
            .content{
-               background: #7ab4dbda;
+               background: #e19fffd2;
                height: 90%;
                width: 90%;
                padding: 5%;
@@ -247,6 +297,7 @@ header{
                    background: rgba(255, 255, 255, 0.815);
                    border-radius: 30px;
                    transition: .2s ease-in-out;
+                   color: #8f2cbd;
                    &:hover{
                        font-size: 1.1em;
                        background: rgb(255, 255, 255);
@@ -259,9 +310,9 @@ header{
            }
          &:nth-child(3) .content,
          &:nth-child(5) .content{
-             background: #e19fffd2;
+             background: #7ab4dbda;
              a{
-              color: #8f2cbd;   
+              color: $dental-centar-blue;   
              }
          }
          &:nth-child(5) .content{
@@ -280,12 +331,16 @@ header{
         margin-top: 15%;
         margin-bottom: 10%;
              } 
+    @media (max-width: 800px) {
+        margin-top: 60%;
+        margin-bottom: 0%;
+             } 
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
         position: relative;
         width: 63%;
         border-radius: 35px;
-        padding: 130px 0;
+        padding: 100px 0;
         margin:0 auto;
         overflow: hidden;
         @media (max-width: 1500px) {
@@ -296,21 +351,34 @@ header{
             position: absolute;
             top: -20%;
             left: 50%;
-            opacity: .1;
+            opacity: .08;
             z-index: 1;
+            @media (max-width: 800px) {
+            width: 600px;
+            height: 600px;
+            top: -10%;
+            left: 55%;
+            opacity: .07;
+                    } 
         }
         .text{
             padding:20px 0;
             color: white;
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: 400;
             z-index: 2;
             text-shadow: 0px 1px #3a023f;
+            @media (max-width: 800px) {
+            font-size: 1.5em;   
+            } 
         }
     }
 }
 .locationSection{
     text-align: center;
+    @media (max-width: 800px) {
+        margin-top: -10%;
+               } 
     .container{
     background-image: linear-gradient(30deg, $dental-light-pink -40%, $dental-light-blue);
     position: relative;
@@ -324,6 +392,10 @@ header{
     @media (max-width: 1500px) {
       width: 90%;
              } 
+    @media (max-width: 800px) {
+      height: 700px;
+      flex-wrap: wrap;
+             } 
     img{
         position: absolute;
         left: -5%;
@@ -333,6 +405,10 @@ header{
     .text{
         margin-top: 14%;
         margin-left: 5%;
+        @media (max-width: 800px) {
+           margin-top: 4%;
+           margin-left: 0;
+                   } 
     p{
         color: white;
         font-size: 2.5em;
@@ -350,7 +426,11 @@ header{
         height: 350px;
         width: 500px;
         overflow: hidden;
+        @media (max-width: 800px) {
+            margin-top: -5%;
+                   } 
     }
+   
 
 }
 }
@@ -358,6 +438,10 @@ header{
     @media (max-width: 1500px) {
        margin-top: 10%;
                } 
+    @media (max-width: 800px) {
+       text-align: center;
+               } 
+
     .container{
         background-image: linear-gradient(120deg, $dental-light-blue 40%, $dental-light-pink);
         position: relative;
@@ -376,11 +460,17 @@ header{
             top: -28%;
             opacity: .15;
             z-index: 0;
+            @media (max-width: 800px) {
+            opacity: .1;
+                } 
         }
         .text{
          margin-left: 9%;
          margin-top: 2.5%;   
          z-index: 1;
+         @media (max-width: 800px) {
+            margin-left: 0;
+            } 
         p{
             font-size: 2em;
             color: white;
