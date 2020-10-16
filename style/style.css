@@ -73,7 +73,7 @@ header nav a:hover {
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   header nav a {
     display: none;
   }
@@ -83,7 +83,7 @@ header nav a:hover {
   height: 100vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .section {
     height: 70vh;
   }
@@ -120,7 +120,7 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .heroSection {
     text-align: center;
     -webkit-box-pack: center;
@@ -135,7 +135,7 @@ header nav a:hover {
   z-index: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .heroSection .left {
     margin-top: 25%;
   }
@@ -148,18 +148,6 @@ header nav a:hover {
 }
 
 @media (max-width: 1500px) {
-  .heroSection .left h1 {
-    font-size: 2.8em;
-  }
-}
-
-@media (max-width: 1030px) {
-  .heroSection .left h1 {
-    font-size: 2.4em;
-  }
-}
-
-@media (max-width: 1030px) {
   .heroSection .left h1 {
     font-size: 2.8em;
   }
@@ -178,18 +166,6 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 1030px) {
-  .heroSection .left h3 {
-    font-size: 1.9em;
-  }
-}
-
-@media (max-width: 800px) {
-  .heroSection .left h3 {
-    font-size: 2.3em;
-  }
-}
-
 .heroSection .left h3:nth-of-type(2) {
   font-size: 2.5em;
   margin: 0px 0 15px;
@@ -197,18 +173,6 @@ header nav a:hover {
 }
 
 @media (max-width: 1500px) {
-  .heroSection .left h3:nth-of-type(2) {
-    font-size: 1.8em;
-  }
-}
-
-@media (max-width: 1030px) {
-  .heroSection .left h3:nth-of-type(2) {
-    font-size: 1.6em;
-  }
-}
-
-@media (max-width: 800px) {
   .heroSection .left h3:nth-of-type(2) {
     font-size: 1.8em;
   }
@@ -279,12 +243,12 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1024px) {
   .heroSection .right img {
     height: 450px;
     width: 450px;
-    right: -10%;
-    top: -10%;
+    right: 23%;
+    top: -20%;
   }
 }
 
@@ -337,7 +301,7 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .servicesSection .container {
     height: 90vh;
   }
@@ -407,6 +371,12 @@ header nav a:hover {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .servicesSection .container .service .content {
+    background: #7ab4dbda;
+  }
+}
+
 .servicesSection .container .service .content h3 {
   color: white;
   text-transform: uppercase;
@@ -424,6 +394,12 @@ header nav a:hover {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   color: #8f2cbd;
+}
+
+@media (max-width: 1024px) {
+  .servicesSection .container .service .content a {
+    color: #0076c1;
+  }
 }
 
 .servicesSection .container .service .content a:hover {
@@ -451,6 +427,22 @@ header nav a:hover {
   margin-bottom: 13%;
 }
 
+@media (max-width: 1024px) {
+  .servicesSection .container .service:nth-child(2) .content,
+  .servicesSection .container .service:nth-child(3) .content,
+  .servicesSection .container .service:nth-child(6) .content {
+    background: #e19fffd2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .servicesSection .container .service:nth-child(2) .content a,
+  .servicesSection .container .service:nth-child(3) .content a,
+  .servicesSection .container .service:nth-child(6) .content a {
+    color: #8f2cbd;
+  }
+}
+
 .workHoursSection {
   text-align: center;
 }
@@ -462,7 +454,7 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .workHoursSection {
     margin-top: 60%;
     margin-bottom: 0%;
@@ -493,7 +485,7 @@ header nav a:hover {
   z-index: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .workHoursSection .container img {
     width: 600px;
     height: 600px;
@@ -512,7 +504,7 @@ header nav a:hover {
   text-shadow: 0px 1px #3a023f;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .workHoursSection .container .text {
     font-size: 1.5em;
   }
@@ -608,9 +600,10 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .contactSection {
     text-align: center;
+    margin-top: 30%;
   }
 }
 
@@ -639,7 +632,7 @@ header nav a:hover {
   z-index: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .contactSection .container .backgroundPhoto {
     opacity: .1;
   }
@@ -651,7 +644,7 @@ header nav a:hover {
   z-index: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .contactSection .container .text {
     margin-left: 0;
   }

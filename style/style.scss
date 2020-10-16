@@ -57,7 +57,7 @@ header{
                 background: $dental-centar-pink;
                 color: white;
             }
-            @media (max-width: 800px) {
+            @media (max-width: 1024px) {
                display: none;
                  }
         }
@@ -65,7 +65,7 @@ header{
 }
 .section{
     height: 100vh;
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
         height: 70vh;
           } 
     h2{
@@ -89,7 +89,7 @@ header{
     @media (max-width: 1180px) {
         width: 80%;    
     }
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
         text-align: center;
         justify-content: center;
         height: 60vh;
@@ -98,7 +98,7 @@ header{
     
     .left{
         z-index: 1;
-        @media (max-width: 800px) {
+        @media (max-width: 1024px) {
             margin-top: 25%;
               }
        h1{
@@ -108,12 +108,7 @@ header{
            @media (max-width: 1500px) {
            font-size: 2.8em;
              }
-           @media (max-width: 1030px) {
-           font-size: 2.4em;
-             }
-           @media (max-width: 1030px) {
-           font-size: 2.8em;
-             }
+       
              
        }
        h3{
@@ -124,12 +119,7 @@ header{
            @media (max-width: 1500px) {
             font-size: 2.3em;
               }  
-            @media (max-width: 1030px) {
-            font-size: 1.9em;
-            }
-            @media (max-width: 800px) {
-            font-size: 2.3em;
-            }
+         
            &:nth-of-type(2){
                font-size: 2.5em;
                margin: 0px 0 15px;
@@ -137,12 +127,7 @@ header{
                @media (max-width: 1500px) {
                 font-size: 1.8em;
                 } 
-               @media (max-width: 1030px) {
-                font-size: 1.6em;
-                } 
-               @media (max-width: 800px) {
-                font-size: 1.8em;
-                } 
+            
            }
        }
        button{
@@ -194,11 +179,11 @@ header{
             right: -8%;
             top:-15%;
             }         
-        @media (max-width: 1030px) {
+        @media (max-width: 1024px) {
             height: 450px;
             width: 450px;
-            right: -10%;
-            top:-10%;
+            right: 23%;
+            top:-20%;
             }         
         @media (max-width: 800px) {
             height: 300px;
@@ -211,9 +196,6 @@ header{
 .servicesSection{
     display: flex;
     justify-content: center;
-    @media (max-width: 1500px) {
-       
-        } 
     @media (max-width: 1090px) {
         margin-top: -30%;
         } 
@@ -230,7 +212,7 @@ header{
         @media (max-width: 1280px) {
             height: 90%;
             } 
-        @media (max-width: 800px) {
+        @media (max-width: 1024px) {
             height: 90vh;
             }     
         .service{
@@ -283,6 +265,9 @@ header{
                border-radius: 45px;
                position: relative;
                text-align: center;
+               @media (max-width: 1024px) {
+                background: #7ab4dbda;
+                    } 
                h3{
                    color: white;
                    text-transform: uppercase;
@@ -298,6 +283,9 @@ header{
                    border-radius: 30px;
                    transition: .2s ease-in-out;
                    color: #8f2cbd;
+                   @media (max-width: 1024px) {
+                    color: $dental-centar-blue;
+                        } 
                    &:hover{
                        font-size: 1.1em;
                        background: rgb(255, 255, 255);
@@ -311,16 +299,32 @@ header{
          &:nth-child(3) .content,
          &:nth-child(5) .content{
              background: #7ab4dbda;
+             
              a{
-              color: $dental-centar-blue;   
+              color: $dental-centar-blue;
+           
              }
          }
+
          &:nth-child(5) .content{
              h3{
                  margin-top: 41%;
                  margin-bottom: 13%;
              }
          }
+        &:nth-child(2) .content,
+        &:nth-child(3) .content,
+        &:nth-child(6) .content{
+           
+              @media (max-width: 1024px) {
+                background: #e19fffd2;
+                    }
+               a{
+                @media (max-width: 1024px) {
+                    color: #8f2cbd;
+                        }  
+               }         
+        }
         }
     }
   
@@ -331,7 +335,7 @@ header{
         margin-top: 15%;
         margin-bottom: 10%;
              } 
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
         margin-top: 60%;
         margin-bottom: 0%;
              } 
@@ -353,7 +357,7 @@ header{
             left: 50%;
             opacity: .08;
             z-index: 1;
-            @media (max-width: 800px) {
+            @media (max-width: 1024px) {
             width: 600px;
             height: 600px;
             top: -10%;
@@ -368,7 +372,7 @@ header{
             font-weight: 400;
             z-index: 2;
             text-shadow: 0px 1px #3a023f;
-            @media (max-width: 800px) {
+            @media (max-width: 1024px) {
             font-size: 1.5em;   
             } 
         }
@@ -438,8 +442,9 @@ header{
     @media (max-width: 1500px) {
        margin-top: 10%;
                } 
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
        text-align: center;
+       margin-top: 30%;
                } 
 
     .container{
@@ -460,7 +465,7 @@ header{
             top: -28%;
             opacity: .15;
             z-index: 0;
-            @media (max-width: 800px) {
+            @media (max-width: 1024px) {
             opacity: .1;
                 } 
         }
@@ -468,7 +473,7 @@ header{
          margin-left: 9%;
          margin-top: 2.5%;   
          z-index: 1;
-         @media (max-width: 800px) {
+         @media (max-width: 1024px) {
             margin-left: 0;
             } 
         p{
