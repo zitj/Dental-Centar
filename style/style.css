@@ -887,6 +887,10 @@ header nav a:hover {
   letter-spacing: 1px;
   margin-top: 35%;
   margin-bottom: 10%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .servicesSection .container .service .content a {
