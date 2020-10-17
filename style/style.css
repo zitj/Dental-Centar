@@ -906,7 +906,7 @@ header nav a:hover {
 }
 
 .servicesSection .container .service .content a:active {
-  font-size: 1em;
+  font-size: .8em;
   background: rgba(255, 255, 255, 0.815);
 }
 
