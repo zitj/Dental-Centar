@@ -134,14 +134,26 @@ header{
           margin-top: 12%;
         }
         @media (max-width: 600px) {
-          margin-right: -67.5%;
+          margin-right: -64.5%;
         }
         @media (max-width: 540px) {
           margin-right: -49.5%;
         }
+        @media (max-width: 480px) {
+          margin-top: 17%;
+        }
         @media (max-width: 420px) {
           margin-right: -38.5%;
-          margin-top: 17%;
+        }
+        @media (max-width: 390px) {
+          margin-right: -33.5%;
+        }
+        @media (max-width: 375px) {
+          margin-right: -31%;
+        }
+        @media (max-width: 360px) {
+          margin-right: -28.5%;
+          margin-top: 19%;
         }
         @media (max-width: 320px) {
           margin-right: -22.5%;
@@ -158,14 +170,39 @@ header{
                 background: $dental-centar-blue;
                 color:white;
                 border-bottom: 1px solid white;
+                animation: dropMenu;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode:forwards;
+
                 &:nth-child(1){
                     border-radius: 35px 0 0 0;
+                    animation-duration: 250ms;
+                }
+                &:nth-child(2){
+                    animation-duration: 550ms;
+                }
+                &:nth-child(3){
+                    animation-duration: 850ms;
+                }
+                &:nth-child(4){
+                    animation-duration: 1150ms;
                 }
                 &:nth-child(5){
                     border-radius: 0 0 0 35px;
+                    animation-duration: 1450ms;
                 }
                   }
+                  @keyframes dropMenu {
+                    0%{
+                        opacity: 0;
+                        transform: rotateY(-90deg) translateY(30px);
+                    }
+                    100%{
+                        opacity: 1;
+                        transform: rotateY(0deg) translateY(0px);
+                    }
         }
+                } 
     }
 }
 .section{
