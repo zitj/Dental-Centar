@@ -16,6 +16,10 @@ a{
     text-decoration: none;
     color: $dental-centar-blue;
 }
+a,
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 header{
     font-size: 1.1em;
     height: 50px;
