@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #dae5ff;
+  background: #dee7ff;
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
@@ -39,6 +39,60 @@ header {
   }
 }
 
+header .hamburger {
+  display: none;
+  margin-top: 8px;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  background: #0076c1;
+  border-radius: 50%;
+}
+
+header .hamburger span {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 20px;
+  height: 2px;
+  background: white;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+header .hamburger span:nth-child(1) {
+  margin-top: 12px;
+}
+
+header .hamburger span:nth-child(1).active {
+  margin-top: 10px;
+}
+
+header .hamburger span:nth-child(3) {
+  margin-bottom: 0;
+}
+
+header .hamburger span:nth-child(2).active {
+  opacity: 0;
+}
+
+header .hamburger span:nth-child(3).active {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+          transform: translateY(-10px) rotate(45deg);
+  margin-top: 11px;
+}
+
+header .hamburger span.active {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+          transform: translateY(10px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  header .hamburger {
+    display: block;
+  }
+}
+
 header .logo {
   cursor: pointer;
   display: -webkit-box;
@@ -60,17 +114,9 @@ header .logo svg {
 
 @media (max-width: 540px) {
   header .logo svg {
-    width: 28px;
-    height: 28px;
-    margin-top: 11px;
-  }
-}
-
-@media (max-width: 390px) {
-  header .logo svg {
-    width: 20px;
-    height: 20px;
-    margin-top: 13px;
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
   }
 }
 
@@ -87,15 +133,13 @@ header .logo p {
   header .logo p {
     font-size: 1em;
     margin-left: 5px;
-    line-height: 16px;
+    line-height: 18px;
   }
 }
 
-@media (max-width: 540px) {
-  header .logo p {
-    font-size: .8em;
-    margin-left: 3px;
-    line-height: 20px;
+@media (max-width: 1024px) {
+  header nav {
+    display: none;
   }
 }
 
@@ -113,8 +157,69 @@ header nav a:hover {
 }
 
 @media (max-width: 1024px) {
-  header nav a {
-    display: none;
+  header nav.active {
+    display: block;
+    margin-top: 10%;
+    height: 350px;
+    z-index: 3;
+    margin-right: -88%;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav.active {
+    margin-right: -77.5%;
+    margin-top: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav.active {
+    margin-right: -67.5%;
+  }
+}
+
+@media (max-width: 540px) {
+  header nav.active {
+    margin-right: -49.5%;
+  }
+}
+
+@media (max-width: 420px) {
+  header nav.active {
+    margin-right: -38.5%;
+    margin-top: 17%;
+  }
+}
+
+@media (max-width: 320px) {
+  header nav.active {
+    margin-right: -22.5%;
+    margin-top: 20%;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1024px) {
+  header nav.active a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    border-radius: 0;
+    background: #0076c1;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  header nav.active a:nth-child(1) {
+    border-radius: 35px 0 0 0;
+  }
+  header nav.active a:nth-child(5) {
+    border-radius: 0 0 0 35px;
   }
 }
 
