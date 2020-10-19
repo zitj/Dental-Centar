@@ -237,7 +237,7 @@ display: block;
     background: rgba(255, 255, 255, 0.979);
     z-index: 33;
     top: 0;
-    animation: introBackground .3s ease-in-out;
+    animation: introBackground .5s ease-in-out;
     @keyframes introBackground{
         0%{
             opacity: 0;
@@ -410,7 +410,7 @@ display: block;
                 font-size: 1em;
                          }
           &:nth-child(even){
-            background: #b15f9f;
+            background: #018ee6;
           }
 
         }
