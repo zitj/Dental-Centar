@@ -233,6 +233,113 @@ header{
               }
     }
 }
+.priceListSection{
+
+// display: none;
+.overlayBackground{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.966);
+    z-index: 33;
+    top: 0;
+  
+}
+.closeButton{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 340;
+    position: absolute;
+    right: 5%;
+    @media (max-width: 1024px) {
+        right: 10%;
+             }
+    @media (max-width: 800px) {
+        right: 5%;
+             }
+    @media (max-width: 420px) {
+        top: 2.5%;
+             }
+    span{
+        width: 90%;
+        height: 5px;
+        background: $dental-centar-blue;
+        display: block;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transform:translateY(10px) rotate(-45deg);
+        &:nth-child(1){
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &:nth-child(2){
+        transform:translateY(-10px) rotate(45deg);
+        
+        }
+    }
+}
+.priceList{
+    z-index: 34;
+    width: 95%;
+    margin-left: 2.5%;
+    position: absolute;
+    top: 10%;
+    color: white;
+    @media (max-width: 1024px) {
+        width: 80%;
+        margin-left: 10%;
+        top: 5%;
+             }
+    @media (max-width: 800px) {
+        width: 90%;
+        margin-left: 5%;
+        top: 5%;
+             }
+    @media (max-width: 420px) {
+        width: 95%;
+        margin-left: 2.5%;
+        top: 8%;
+             }
+    
+    h2{
+        text-align: center;
+        color: $dental-centar-blue;
+        font-size: 3em;
+        letter-spacing: 5px;
+        font-weight: 300;
+        @media (max-width: 420px) {
+        font-size: 2.5em;
+                 }
+    }
+    table{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.479);
+        tr{
+            background: $dental-centar-blue;
+            font-size: 1.2em;
+          &:nth-child(even){
+            background: #018ee6;
+          }
+
+        }
+        th{
+            padding: 20px;
+            background:#014b79;
+            &:nth-child(1),
+            &:nth-child(3){
+                width: 10%;
+            }
+        }
+        
+        td{
+           padding: 20px;
+           text-align: center;
+           @media (max-width: 420px) {
+            padding: 15px 5px;
+                 } 
+        }
+    }
+}}
 .heroSection{
     display: flex;
     position: relative;
