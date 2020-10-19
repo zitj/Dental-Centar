@@ -338,7 +338,7 @@ display: block;
     }
     table{
         background: none;
-       
+        
         tr{
             background: $dental-centar-blue;
             font-size: 1.2em;
@@ -347,6 +347,7 @@ display: block;
             animation-fill-mode:forwards;
             &:nth-child(1){
                 animation-duration: 300ms;
+                
             }
             &:nth-child(2){
                 animation-duration: 400ms;
@@ -415,24 +416,38 @@ display: block;
 
         }
         th{
+
             padding: 20px;
             background:#014b79;
             &:nth-child(1),
             &:nth-child(3){
                 width: 10%;
             }
+            &:nth-child(1){
+                border-radius: 35px 0 0 0;
+            }
+            &:nth-child(3){
+                border-radius: 0 35px 0 0  ;
+            }
         }
         
         td{
            padding: 20px;
            text-align: center;
+           
            @media (max-width: 490px) {
             padding: 15px 5px;
                  } 
            @media (max-width: 320px) {
             padding: 15px 0px;
                  } 
-         
+           
+        }
+        .lastTd{
+                border-radius:0 0 0 35px;
+        }
+        .lastTd2{
+                border-radius:0 0 35px 0;
         }
     }
 }}

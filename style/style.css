@@ -621,6 +621,14 @@ header nav a:hover {
   width: 10%;
 }
 
+.priceListSection .priceList table th:nth-child(1) {
+  border-radius: 35px 0 0 0;
+}
+
+.priceListSection .priceList table th:nth-child(3) {
+  border-radius: 0 35px 0 0;
+}
+
 .priceListSection .priceList table td {
   padding: 20px;
   text-align: center;
@@ -636,6 +644,14 @@ header nav a:hover {
   .priceListSection .priceList table td {
     padding: 15px 0px;
   }
+}
+
+.priceListSection .priceList table .lastTd {
+  border-radius: 0 0 0 35px;
+}
+
+.priceListSection .priceList table .lastTd2 {
+  border-radius: 0 0 35px 0;
 }
 
 .heroSection {
