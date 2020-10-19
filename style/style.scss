@@ -341,6 +341,7 @@ display: block;
         
         tr{
             background: $dental-centar-blue;
+            color: white;
             font-size: 1.2em;
             animation: dropMenu;
             animation-timing-function: ease-in-out;
@@ -411,14 +412,14 @@ display: block;
                 font-size: 1em;
                          }
           &:nth-child(even){
-            background: #018ee6;
+            background: $dental-centar-pink;
           }
 
         }
         th{
-
+            color: white;
             padding: 20px;
-            background:#014b79;
+            background:$dental-centar-blue;
             &:nth-child(1),
             &:nth-child(3){
                 width: 10%;

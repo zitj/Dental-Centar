@@ -493,6 +493,7 @@ header nav a:hover {
 
 .priceListSection .priceList table tr {
   background: #0076c1;
+  color: white;
   font-size: 1.2em;
   -webkit-animation: dropMenu;
           animation: dropMenu;
@@ -609,12 +610,13 @@ header nav a:hover {
 }
 
 .priceListSection .priceList table tr:nth-child(even) {
-  background: #018ee6;
+  background: #d16eff;
 }
 
 .priceListSection .priceList table th {
+  color: white;
   padding: 20px;
-  background: #014b79;
+  background: #0076c1;
 }
 
 .priceListSection .priceList table th:nth-child(1), .priceListSection .priceList table th:nth-child(3) {
