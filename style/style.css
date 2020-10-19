@@ -624,11 +624,11 @@ header nav a:hover {
 }
 
 .priceListSection .priceList table th:nth-child(1) {
-  border-radius: 35px 0 0 0;
+  border-radius: 16px 0 0 0;
 }
 
 .priceListSection .priceList table th:nth-child(3) {
-  border-radius: 0 35px 0 0;
+  border-radius: 0 16px 0 0;
 }
 
 .priceListSection .priceList table td {
@@ -649,11 +649,11 @@ header nav a:hover {
 }
 
 .priceListSection .priceList table .lastTd {
-  border-radius: 0 0 0 35px;
+  border-radius: 0 0 0 16px;
 }
 
 .priceListSection .priceList table .lastTd2 {
-  border-radius: 0 0 35px 0;
+  border-radius: 0 0 16px 0;
 }
 
 .heroSection {
