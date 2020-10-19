@@ -81,6 +81,7 @@ header{
         cursor: pointer;
         display: flex;
         justify-content: space-evenly;
+        z-index: 1000;
         svg{
             display: flex;
             width: 35px;
@@ -118,7 +119,7 @@ header{
             border-radius: 20px;
             text-transform: uppercase;
             transition: .2s ease-in-out;
-            
+            cursor: pointer;
             &:hover{
                 background: $dental-centar-pink;
                 color: white;
@@ -228,14 +229,17 @@ header{
         @media (max-width: 540px) {
          font-size: 2.5em;
               }
-        @media (max-width: 420px) {
+        @media (max-width: 490px) {
          font-size: 1.8em;
               }
     }
 }
+.priceListSection.hide{
+    display: none;
+}
 .priceListSection{
 
-// display: none;
+display: block;
 .overlayBackground{
     width: 100%;
     height: 100vh;
@@ -252,26 +256,35 @@ header{
     z-index: 340;
     position: absolute;
     right: 5%;
+    top: 1.8%;
     @media (max-width: 1024px) {
         right: 10%;
+        top: .5%;
              }
     @media (max-width: 800px) {
-        right: 5%;
+        right: 8%;
+        top: 1%;
              }
     @media (max-width: 420px) {
-        top: 2.5%;
+        right: 5%;
+        top: .6%;
              }
+    @media (max-width: 375px) {
+        right: 4.2%;
+        top: .4%;
+             }
+  
     span{
         width: 90%;
-        height: 5px;
+        height: 3px;
         background: $dental-centar-blue;
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         border-radius: 5px;
         transform:translateY(10px) rotate(-45deg);
         &:nth-child(1){
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 18px;
+            margin-bottom: 18px;
         }
         &:nth-child(2){
         transform:translateY(-10px) rotate(45deg);
@@ -284,23 +297,29 @@ header{
     width: 95%;
     margin-left: 2.5%;
     position: absolute;
-    top: 10%;
+    top: 6%;
     color: white;
     @media (max-width: 1024px) {
         width: 80%;
         margin-left: 10%;
-        top: 5%;
+        top: 3%;
              }
     @media (max-width: 800px) {
         width: 90%;
-        margin-left: 5%;
         top: 5%;
+        margin-left: 5%;
              }
-    @media (max-width: 420px) {
+    @media (max-width: 490px) {
         width: 95%;
         margin-left: 2.5%;
         top: 8%;
              }
+    @media (max-width: 320px) {
+        width: 100%;
+        margin-left: 0;
+        top: 10%;
+             }
+  
     
     h2{
         text-align: center;
@@ -308,15 +327,31 @@ header{
         font-size: 3em;
         letter-spacing: 5px;
         font-weight: 300;
-        @media (max-width: 420px) {
+        @media (max-width: 800px) {
+        font-size: 2.8em;
+                 }
+        @media (max-width: 490px) {
         font-size: 2.5em;
+                 }
+        @media (max-width: 360px) {
+        font-size: 2em;
+                 }
+        @media (max-width: 320px) {
+        font-size: 1.8em;
                  }
     }
     table{
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.479);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.383);
+        @media (max-width: 490px) {
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.349);
+                     }
+       
         tr{
             background: $dental-centar-blue;
             font-size: 1.2em;
+            @media (max-width: 490px) {
+                font-size: 1em;
+                         }
           &:nth-child(even){
             background: #018ee6;
           }
@@ -334,9 +369,13 @@ header{
         td{
            padding: 20px;
            text-align: center;
-           @media (max-width: 420px) {
+           @media (max-width: 490px) {
             padding: 15px 5px;
                  } 
+           @media (max-width: 320px) {
+            padding: 15px 0px;
+                 } 
+         
         }
     }
 }}
