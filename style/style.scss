@@ -225,28 +225,23 @@ header{
               }
     }
 }
+.formSection{
+    width: 100%;
+    form{
+        z-index: 14000;
+        position: absolute;
+        top: 50%;        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 150px;        
+    }
+}
 .priceListSection.hide{
     display: none;
 }
 .priceListSection{
 display: block;
-.overlayBackground{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background: rgba(255, 255, 255, 0.979);
-    z-index: 33;
-    top: 0;
-    animation: introBackground .5s ease-in-out;
-    @keyframes introBackground{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-}
+
 .closeButton{
     cursor: pointer;
     width: 50px;
@@ -1162,6 +1157,23 @@ display: block;
               margin-left: -5px;
               margin-bottom: -3px;
           }
+        }
+    }
+}
+.overlayBackground{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.979);
+    z-index: 33;
+    top: 0;
+    animation: introBackground .5s ease-in-out;
+    @keyframes introBackground{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 }
