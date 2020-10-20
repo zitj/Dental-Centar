@@ -1,4 +1,4 @@
-@import url(d:\ADEEPLEARN\Projekti\Web Design\Dental Centar Leskovac\website\style\include-media.css);
+@import url(c:\xampp\htdocs\tutorijali\DentalCentarLeskovac\style\include-media.css);
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +9,36 @@ body {
   padding: 0;
   font-family: 'Nunito', sans-serif;
   color: #0076c1;
+}
+
+.forma {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.forma p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.forma label {
+  font-size: 1.1em;
+}
+
+.forma input,
+.forma textarea,
+.forma button {
+  width: 250px;
+  border-radius: 16px;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: none;
+}
+
+.forma button {
+  margin: 0 0 25px;
+  background: #d16eff;
+  color: white;
 }
 
 a {
@@ -281,6 +311,16 @@ header nav a:hover {
   }
 }
 
+.centeredHeader {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.centeredHeader a {
+  margin-left: -4%;
+}
+
 .section {
   height: 100vh;
 }
@@ -316,20 +356,6 @@ header nav a:hover {
   .section h2 {
     font-size: 1.8em;
   }
-}
-
-.formSection {
-  width: 100%;
-}
-
-.formSection form {
-  z-index: 14000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 150px;
 }
 
 .priceListSection.hide {

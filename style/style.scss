@@ -11,7 +11,33 @@ body{
     font-family: 'Nunito', sans-serif;
     color: $dental-centar-blue;
 }
-
+.forma{
+    margin-top: 15%;
+    text-align: center;
+    p{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    label{
+        font-size: 1.1em;
+        
+    }
+    input,
+    textarea,
+    button{
+        width: 250px;
+        border-radius: 16px;
+        margin:5px 0 15px;
+        padding:10px;
+        border: none;
+        
+    }
+    button{
+        margin: 0 0 25px;
+        background: $dental-centar-pink;
+        color: white;
+    }
+}
 a{
     text-decoration: none;
     color: $dental-centar-blue;
@@ -21,6 +47,7 @@ button{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     user-select:none;
 }
+
 header{
     font-size: 1.1em;
     height: 50px;
@@ -201,6 +228,13 @@ header{
                 } 
     }
 }
+.centeredHeader{
+    justify-content: center;
+    a{
+        margin-left: -4%;
+    }
+}
+
 .section{
     height: 100vh;
     @media (max-width: 1024px) {
@@ -225,17 +259,7 @@ header{
               }
     }
 }
-.formSection{
-    width: 100%;
-    form{
-        z-index: 14000;
-        position: absolute;
-        top: 50%;        
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 150px;        
-    }
-}
+
 .priceListSection.hide{
     display: none;
 }

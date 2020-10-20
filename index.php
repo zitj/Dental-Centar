@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <div class="logo"><?xml version="1.0" encoding="utf-8"?>
+        <div class="logo">
             
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
@@ -191,7 +191,7 @@
             <h1>Mi brinemo za Vaš osmeh</h1>
             <h3>Dental Centar Leskovac</h3>
             <h3>Dr. Milan Gavrilović</h3>
-            <button>zakažite pregled</button>
+            <a href="form.php">zakažite pregled</a>
         </div><!-- end .left -->
 
         <div class="right">
