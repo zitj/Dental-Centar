@@ -1,0 +1,22 @@
+@mixin pinkButton() {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    background: $dental-centar-pink;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(78, 0, 92);
+    transition: .2s ease-in-out;
+    letter-spacing: 1px;
+     &:hover{
+         opacity: .8;
+         transform: scale(1.03);
+     }
+     &:active{
+         opacity: 1;
+         transform: scale(1);
+     }
+ }

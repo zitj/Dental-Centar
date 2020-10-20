@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 @import "./include-media.css";
 html{
     scroll-behavior: smooth;
@@ -12,8 +13,12 @@ body{
     color: $dental-centar-blue;
 }
 .forma{
-    margin-top: 15%;
+    margin: 5% auto;
+    width: 80%;
     text-align: center;
+    @media (max-width: 1024px) {
+        margin-top: 10%;
+          }
     p{
         font-size: 1.2em;
         font-weight: 600;
@@ -25,17 +30,23 @@ body{
     input,
     textarea,
     button{
-        width: 250px;
+        width: 30%;
         border-radius: 16px;
         margin:5px 0 15px;
         padding:10px;
         border: none;
-        
+        @media (max-width: 1024px) {
+            width: 60%;
+              }
+        @media (max-width: 500px) {
+            width: 80%;
+              }
+        @media (max-width: 420px) {
+            width: 90%;
+              }
     }
     button{
-        margin: 0 0 25px;
-        background: $dental-centar-pink;
-        color: white;
+        @include pinkButton();
     }
 }
 a{
@@ -231,7 +242,7 @@ header{
 .centeredHeader{
     justify-content: center;
     a{
-        margin-left: -4%;
+        margin-left: -2%;
     }
 }
 
@@ -597,29 +608,8 @@ display: block;
             
            }
        }
-       button{
-           padding: 15px 25px;
-           border-radius: 50px;
-           color: white;
-           background: $dental-centar-pink;
-           text-transform: uppercase;
-           border: none;
-           outline: none;
-           cursor: pointer;
-           border-bottom: 1px solid rgb(78, 0, 92);
-           transition: .2s ease-in-out;
-           letter-spacing: 1px;
-           @media (max-width: 1500px) {
-            font-size: .7em;
-            } 
-            &:hover{
-                opacity: .8;
-                transform: scale(1.03);
-            }
-            &:active{
-                opacity: 1;
-                transform: scale(1);
-            }
+       a{
+          @include pinkButton();
         }
     }
     .right{

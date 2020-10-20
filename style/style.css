@@ -12,8 +12,15 @@ body {
 }
 
 .forma {
-  margin-top: 15%;
+  margin: 5% auto;
+  width: 80%;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .forma {
+    margin-top: 10%;
+  }
 }
 
 .forma p {
@@ -28,17 +35,63 @@ body {
 .forma input,
 .forma textarea,
 .forma button {
-  width: 250px;
+  width: 30%;
   border-radius: 16px;
   margin: 5px 0 15px;
   padding: 10px;
   border: none;
 }
 
+@media (max-width: 1024px) {
+  .forma input,
+  .forma textarea,
+  .forma button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .forma input,
+  .forma textarea,
+  .forma button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .forma input,
+  .forma textarea,
+  .forma button {
+    width: 90%;
+  }
+}
+
 .forma button {
-  margin: 0 0 25px;
-  background: #d16eff;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 50px;
   color: white;
+  background: #d16eff;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 1px solid #4e005c;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.forma button:hover {
+  opacity: .8;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.forma button:active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 a {
@@ -318,7 +371,7 @@ header nav a:hover {
 }
 
 .centeredHeader a {
-  margin-left: -4%;
+  margin-left: -2%;
 }
 
 .section {
@@ -890,7 +943,8 @@ header nav a:hover {
   }
 }
 
-.heroSection .left button {
+.heroSection .left a {
+  display: inline-block;
   padding: 15px 25px;
   border-radius: 50px;
   color: white;
@@ -905,19 +959,13 @@ header nav a:hover {
   letter-spacing: 1px;
 }
 
-@media (max-width: 1500px) {
-  .heroSection .left button {
-    font-size: .7em;
-  }
-}
-
-.heroSection .left button:hover {
+.heroSection .left a:hover {
   opacity: .8;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
-.heroSection .left button:active {
+.heroSection .left a:active {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);

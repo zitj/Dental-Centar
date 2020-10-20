@@ -50,7 +50,7 @@
             <label for="">E-mail adresa</label><br>
             <input type="text"><br>
             <label for="tel">Broj telefona</label><br>
-            <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+381 6X XXX XX XXX" required><br>
+            <input type="tel"  placeholder="+381 6X XXX XX XXX" required><br>
             <label for="">Željeni datum</label><br>
             <input type="date"><br>
             <label for="">Vaša poruka</label><br>
