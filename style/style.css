@@ -1321,18 +1321,20 @@ header nav a:hover {
   }
 }
 
-.servicesSection .container .service .content .text {
+.servicesSection .container .service .content .contentText {
   display: none;
 }
 
-.servicesSection .container .service .content .text.active {
+.servicesSection .container .service .content .contentText.active {
   display: block;
   padding: 10px;
   border-radius: 16px;
   margin-bottom: 10%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
-.servicesSection .container .service .content .text.active p {
+.servicesSection .container .service .content .contentText.active p {
   color: white;
   font-size: 1.1em;
   text-align: center;
@@ -1350,6 +1352,8 @@ header nav a:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .servicesSection .container .service .content a {
@@ -1439,6 +1443,26 @@ header nav a:hover {
   position: absolute;
   bottom: 10%;
   left: 34%;
+  -webkit-animation: buttonDown .3s ease-in-out;
+          animation: buttonDown .3s ease-in-out;
+}
+
+@-webkit-keyframes buttonDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes buttonDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .servicesSection .container .service.active .content a span:nth-child(1) {

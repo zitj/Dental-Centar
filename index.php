@@ -187,55 +187,55 @@
     </div> <!-- end heroSection -->
 
     <div class="servicesSection section" id="servicesSection">
-        <div class="container">
-            <div class="service"><h2>USLUGE</h2></div>
-          
-            <div class="service active"><div class="content">
-              <h3>konzervativna <br>stomatologija</h3>
-              <div class="text active">
-                <p>Kanalno lečenje</p>
-                <p>Popravka zuba</p>
-              </div>
-              <a>prikaži <span>više</span> <span>manje</span></a>
+      <div class="container">
+          <div class="service"><h2>USLUGE</h2></div>
+        
+          <div class="service"><div class="content">
+            <h3>konzervativna <br>stomatologija</h3>
+            <div class="contentText ">
+              <p>Kanalno lečenje</p>
+              <p>Popravka zuba</p>
             </div>
+            <a class="serviceButton">prikaži <span>više</span> <span>manje</span></a>
           </div>
+        </div>
 
-            <div class="service active"><div class="content">
-              <h3>stomatološka <br>protetika</h3>
-              <div class="text active">
-                <p>Hirurško vađenje impaktiranih zuba</p>
-                <p>Vađenje zuba</p>
-                <p>Apikotomija</p>
-              </div>
-              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+          <div class="service "><div class="content">
+            <h3>stomatološka <br>protetika</h3>
+            <div class="contentText">
+              <p>Hirurško vađenje impaktiranih zuba</p>
+              <p>Vađenje zuba</p>
+              <p>Apikotomija</p>
+            </div>
+            <a class="serviceButton">prikaži <span>više</span> <span>manje</span></a></div></div>
 
-            <div class="service active"><div class="content">
-              <h3>oralna <br>hirurgija</h3>
-              <div class="text active">
-                <p>Izrada metalokeramičkih krunica</p>
-                <p>Izrada proteza (akrilatne, vizil, silikonske)</p>
-              </div>
-              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+          <div class="service"><div class="content">
+            <h3>oralna <br>hirurgija</h3>
+            <div class="contentText">
+              <p>Izrada metalokeramičkih krunica</p>
+              <p>Izrada proteza (akrilatne, vizil, silikonske)</p>
+            </div>
+            <a class="serviceButton">prikaži <span>više</span> <span>manje</span></a></div></div>
 
-            <div class="service active"><div class="content ">
-              <h3>ortodoncija <br></h3>
-              <div class="text active">
-                <p>Izrada ortodontskih folija</p>
-                <p>Izrada fiksnih proteza</p>
-              </div>
-              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+          <div class="service"><div class="content ">
+            <h3>ortodoncija <br></h3>
+            <div class="contentText">
+              <p>Izrada ortodontskih folija</p>
+              <p>Izrada fiksnih proteza</p>
+            </div>
+            <a class="serviceButton">prikaži <span>više</span> <span>manje</span></a></div></div>
 
-            <div class="service active"><div class="content">
-              <h3>estetska<br>stomatologija</h3>
-              <div class="text active">
-                <p>Ultrazvučno uklanjanje zubnog kamenca</p>
-                <p>Ugradnja cirkona</p>
-                <p>Izbeljivanje zuba</p>
-              </div>
-              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
-         
-        </div> <!-- end .container-->
-    </div><!-- end .servicesSection-->
+          <div class="service"><div class="content">
+            <h3>estetska<br>stomatologija</h3>
+            <div class="contentText">
+              <p>Ultrazvučno uklanjanje zubnog kamenca</p>
+              <p>Ugradnja cirkona</p>
+              <p>Izbeljivanje zuba</p>
+            </div>
+            <a class="serviceButton">prikaži <span>više</span> <span>manje</span></a></div></div>
+       
+      </div> <!-- end .container-->
+  </div><!-- end .servicesSection-->
 
     <div class="workHoursSection section" id="workHoursSection">
         <h2>RADNO VREME</h2>
