@@ -70,6 +70,7 @@ body{
         animation: dropMenu;
         animation-timing-function: ease-in-out;
         animation-fill-mode:forwards;
+        font-family: 'Nunito', sans-serif;
         &:focus{
             border: 1px solid $dental-centar-blue;
         }
@@ -824,6 +825,7 @@ display: block;
             &:nth-child(6){
                 background: url(../img/services/5.jpg) no-repeat 60% 60%;
              }
+            
            .content{
                background: #e19fffd2;
                height: 90%;
@@ -832,8 +834,24 @@ display: block;
                border-radius: 45px;
                position: relative;
                text-align: center;
+              
+               
                @media (max-width: 1024px) {
                 background: #7ab4dbda;
+                    }
+                    .text{
+                        display: none;
+                    }
+                    .text.active{
+                        display: block;
+                        padding: 10px;
+                        border-radius: 16px;
+                        margin-bottom: 10%;
+                        p{
+                            color: white;
+                            font-size: 1.1em;
+                            text-align: center;
+                        }
                     } 
                h3{
                    color: white;
@@ -844,6 +862,7 @@ display: block;
                    margin-top: 35%;
                    margin-bottom: 10%;
                    user-select:none;
+                  
                }
                a{
                    padding: 10px 15px;
@@ -851,19 +870,24 @@ display: block;
                    border-radius: 30px;
                    transition: .2s ease-in-out;
                    color: #8f2cbd;
+                   cursor: pointer;
+                   span{
+                       &:nth-child(2){
+                           display: none;
+                       }
+                   }
                    @media (max-width: 1024px) {
                     color: $dental-centar-blue;
                         } 
                    &:hover{
-                       font-size: 1.1em;
                        background: rgb(255, 255, 255);
                    }
                    &:active{
-                       font-size: .8em;
                        background: rgba(255, 255, 255, 0.815);
                    }
                }
            }
+          
          &:nth-child(3) .content,
          &:nth-child(5) .content{
              background: #7ab4dbda;
@@ -909,7 +933,63 @@ display: block;
                 color: #8f2cbd;
                 }
         }
-       
+       &.active{
+           .content{
+            
+                h3{
+                    margin-top: 10%;
+                  
+                }
+              a{
+                  position: absolute;
+                  bottom: 10%;
+                  left: 34%;
+                  span{
+                      &:nth-child(1){
+                          display: none;
+                      }
+                      &:nth-child(2){
+                          display: inline-block;
+                      }
+                  }
+              }
+           }
+           &:nth-child(2){
+            .content{
+                h3{
+                    margin-bottom: 7%;
+                }
+            }
+        }
+           &:nth-child(3){
+            .content{
+                h3{
+                    margin-bottom: 2%;
+                }
+            }
+        }
+           &:nth-child(4){
+            .content{
+                h3{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+           &:nth-child(5){
+            .content{
+                h3{
+                    margin-bottom:13%;
+                }
+            }
+        }
+           &:nth-child(6){
+            .content{
+                h3{
+                    margin-bottom: -2%;
+                }
+            }
+        }
+       }
         }
     }
   

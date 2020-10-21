@@ -88,7 +88,7 @@
             </tr>
             <tr>
               <td>4</td>
-              <td>Endodontka terapija inficirane pulpe</td>
+              <td>Endodontska terapija inficirane pulpe</td>
               <td>600 RSD</td>
             </tr>
             <tr>
@@ -189,11 +189,50 @@
     <div class="servicesSection section" id="servicesSection">
         <div class="container">
             <div class="service"><h2>USLUGE</h2></div>
-            <div class="service"><div class="content"><h3>konzervativna <br>stomatologija</h3><a>pročitaj više</a></div></div>
-            <div class="service"><div class="content"><h3>stomatološka <br>prostetika</h3><a>pročitaj više</a></div></div>
-            <div class="service"><div class="content"><h3>oralna <br>hirurgija</h3><a>pročitaj više</a></div></div>
-            <div class="service"><div class="content"><h3>ortodoncija <br></h3><a>pročitaj više</a></div></div>
-            <div class="service"><div class="content"><h3>stomatološka<br>estetika</h3><a>pročitaj više</a></div></div>
+          
+            <div class="service active"><div class="content">
+              <h3>konzervativna <br>stomatologija</h3>
+              <div class="text active">
+                <p>Kanalno lečenje</p>
+                <p>Popravka zuba</p>
+              </div>
+              <a>prikaži <span>više</span> <span>manje</span></a>
+            </div>
+          </div>
+
+            <div class="service active"><div class="content">
+              <h3>stomatološka <br>protetika</h3>
+              <div class="text active">
+                <p>Hirurško vađenje impaktiranih zuba</p>
+                <p>Vađenje zuba</p>
+                <p>Apikotomija</p>
+              </div>
+              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+
+            <div class="service active"><div class="content">
+              <h3>oralna <br>hirurgija</h3>
+              <div class="text active">
+                <p>Izrada metalokeramičkih krunica</p>
+                <p>Izrada proteza (akrilatne, vizil, silikonske)</p>
+              </div>
+              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+
+            <div class="service active"><div class="content ">
+              <h3>ortodoncija <br></h3>
+              <div class="text active">
+                <p>Izrada ortodontskih folija</p>
+                <p>Izrada fiksnih proteza</p>
+              </div>
+              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
+
+            <div class="service active"><div class="content">
+              <h3>estetska<br>stomatologija</h3>
+              <div class="text active">
+                <p>Ultrazvučno uklanjanje zubnog kamenca</p>
+                <p>Ugradnja cirkona</p>
+                <p>Izbeljivanje zuba</p>
+              </div>
+              <a>prikaži <span>više</span> <span>manje</span></a></div></div>
          
         </div> <!-- end .container-->
     </div><!-- end .servicesSection-->
@@ -232,8 +271,8 @@
             <img class="backgroundPhoto" src="img/contact/ordinacija2.png" alt="">
             <div class="text">
                 <p>Dr. Milan Gavrilović</p>
-                <p>dentalcentar@gmail.com</p>
-                <p>+381 64 172 2 644</p>
+                <p>dentalcentarle@gmail.com</p>
+                <p>+381 64 17 22 644</p>
                 <button><a href="tel:+381641722644">
                  <img  src="img/contact/telefon.png" alt="">
                     Pozovite

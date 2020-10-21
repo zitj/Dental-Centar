@@ -20,8 +20,8 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host = 'mail.motocentarpljevaljcic.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'aleksandar@motocentarpljevaljcic.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = 'dodjiugrcku'; // Gmail address Password
+    $mail->Username = 'mail@motocentarpljevaljcic.com'; // Gmail address which you want to use as SMTP server
+    $mail->Password = 'pwpwpw'; // Gmail address Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = '465';
 
