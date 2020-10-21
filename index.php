@@ -54,23 +54,7 @@
             <span></span>
         </div><!-- end .hamburger -->
     </header>
-   <!-- <div class="formSection">
-      <div class="overlayBackground"></div>  end overlayBackground 
-      <form action="mailto:1eyedea2eyedeas@gmail.com" method="post" enctype="text/plain">
-        
-          <label for="ime">Ime i prezime:</label><br>
-          <input type="text" id="ime" name="ime"><br>
-          <label for="email">E-mail adresa:</label><br>
-          <input type="text" id="email" name="email"><br>
-          <label for="telefon">Broj telefona:</label><br>
-          <input type="text" id="telefon" name="telefon"><br>
-          <input type="date"><br>
-          <label for="poruka">Vaša poruka:</label><br>
-          <input type="text" name="poruka" size="50"><br><br>
-          <input type="submit" value="Send">
-          <input type="reset" value="Reset">
-        
-      </form> -->
+  
     </div>
     <div class="priceListSection section hide">
     <div class="closeButton">

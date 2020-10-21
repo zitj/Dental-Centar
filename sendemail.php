@@ -30,25 +30,17 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<p>Ime : $name <br> Broj telefona: $phone <br> Email adresa: $email <br> Željeni datum: $date <br> Poruka : $message</p>";
+    $mail->Body = "<p>Ime : $name <br> Broj telefona: $phone <br> Email adresa: $email <br> Željeni datum: $date <br><br> Poruka : $message</p>";
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Upit je poslat! Hvala sto ste nas kontaktirali.</span>
+                 <span>Upit je poslat! Hvala što ste nas kontaktirali.</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">
-                <span>'.$e->getMessage().'</span>
+                <span>Došlo je do greške. Molimo Vas pokušajte ponovo.</span>
               </div>';
   }
 }
 ?>
-
-
-<!-- Username:	aleksandar@motocentarpljevaljcic.com
-Password:	Use the email account’s password.
-Incoming Server:	mail.motocentarpljevaljcic.com
-IMAP Port: 993 POP3 Port: 995
-Outgoing Server:	mail.motocentarpljevaljcic.com
-SMTP Port: 465
-IMAP, POP3, and SMTP require authentication. -->
+<!-- .$e->getMessage(). -->

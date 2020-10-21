@@ -48,21 +48,19 @@
     <!--alert messages start-->
     <?php echo $alert; ?>
     <!--alert messages end-->
-
         <form class="forma" action="" method="post">
-            <p>Molimo unesite Vaše podatke</p>
 
             <label for="">Ime i prezime</label><br>
-            <input type="text" name="name" placeholder="Vaše ime i prezime" required><br>
+            <input type="text" name="name" placeholder="Vaše ime i prezime" required oninvalid="this.setCustomValidity('Molimo Vas unesite ime i prezime')" oninput="setCustomValidity('')"><br>
             
             <label for="">E-mail adresa</label><br>
-            <input type="email" name="email" placeholder="Vaša E-mail adresa" required><br>
+            <input type="email" name="email" placeholder="Vaša E-mail adresa" required oninvalid="this.setCustomValidity('Molimo Vas unesite E-mail adresu')" oninput="setCustomValidity('')"><br>
             <label for="tel">Broj telefona</label><br>
-            <input type="tel" name="phone"  placeholder="+381 6X XXX XX XXX" required><br>
+            <input type="tel" name="phone"  placeholder="+381 6X XXX XX XXX" required oninvalid="this.setCustomValidity('Molimo Vas unesite broj telefona')" oninput="setCustomValidity('')"><br>
             <label for="">Željeni datum</label><br>
-            <input type="date" name="date"><br>
+            <input type="date" name="date" required oninvalid="this.setCustomValidity('Molimo Vas izaberite željeni datum')" oninput="setCustomValidity('')"><br>
             <label for="">Vaša poruka</label><br>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Vaša poruka"></textarea><br>
+            <textarea name="message" id="" cols="30" rows="5" placeholder="Vaša poruka"></textarea><br>
             <input type="submit" name="submit" class="send-btn" value="Pošalji upit">
 
         </form>
