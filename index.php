@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <div class="logo"><?xml version="1.0" encoding="utf-8"?>
+        <div class="logo">
             
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
@@ -54,8 +54,8 @@
             <span></span>
         </div><!-- end .hamburger -->
     </header>
-    <div class="formSection">
-      <div class="overlayBackground"></div> <!-- end overlayBackground -->
+   <!-- <div class="formSection">
+      <div class="overlayBackground"></div>  end overlayBackground 
       <form action="mailto:1eyedea2eyedeas@gmail.com" method="post" enctype="text/plain">
         
           <label for="ime">Ime i prezime:</label><br>
@@ -64,12 +64,13 @@
           <input type="text" id="email" name="email"><br>
           <label for="telefon">Broj telefona:</label><br>
           <input type="text" id="telefon" name="telefon"><br>
+          <input type="date"><br>
           <label for="poruka">Vaša poruka:</label><br>
           <input type="text" name="poruka" size="50"><br><br>
           <input type="submit" value="Send">
           <input type="reset" value="Reset">
         
-      </form>
+      </form> -->
     </div>
     <div class="priceListSection section hide">
     <div class="closeButton">
@@ -190,7 +191,7 @@
             <h1>Mi brinemo za Vaš osmeh</h1>
             <h3>Dental Centar Leskovac</h3>
             <h3>Dr. Milan Gavrilović</h3>
-            <button>zakažite pregled</button>
+            <a href="form.php">zakažite pregled</a>
         </div><!-- end .left -->
 
         <div class="right">
