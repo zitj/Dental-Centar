@@ -1,3 +1,5 @@
+<?php include 'sendemail.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+
 <header class="centeredHeader">
     <a href="index.php">
         <div class="logo">
@@ -41,21 +44,26 @@
         </div><!-- end .logo -->
 </a>
 </header>
-        <form class="forma" action="">
+
+    <!--alert messages start-->
+    <?php echo $alert; ?>
+    <!--alert messages end-->
+
+        <form class="forma" action="" method="post">
             <p>Molimo unesite Vaše podatke</p>
 
             <label for="">Ime i prezime</label><br>
-            <input type="text"><br>
+            <input type="text" name="name" placeholder="Vaše ime i prezime" required><br>
             
             <label for="">E-mail adresa</label><br>
-            <input type="text"><br>
+            <input type="email" name="email" placeholder="Vaša E-mail adresa" required><br>
             <label for="tel">Broj telefona</label><br>
-            <input type="tel"  placeholder="+381 6X XXX XX XXX" required><br>
+            <input type="tel" name="phone"  placeholder="+381 6X XXX XX XXX" required><br>
             <label for="">Željeni datum</label><br>
-            <input type="date"><br>
+            <input type="date" name="date"><br>
             <label for="">Vaša poruka</label><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br>
-            <button>Pošaljite upit</button>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Vaša poruka"></textarea><br>
+            <input type="submit" name="submit" class="send-btn" value="Pošalji upit">
 
         </form>
    

@@ -66,7 +66,7 @@ body {
   }
 }
 
-.forma button {
+.forma .send-btn {
   display: inline-block;
   padding: 15px 25px;
   border-radius: 50px;
@@ -82,16 +82,12 @@ body {
   letter-spacing: 1px;
 }
 
-.forma button:hover {
+.forma .send-btn:hover {
   opacity: .8;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
-.forma button:active {
+.forma .send-btn:active {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 a {
@@ -961,14 +957,10 @@ header nav a:hover {
 
 .heroSection .left a:hover {
   opacity: .8;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
 .heroSection .left a:active {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .heroSection .right img {

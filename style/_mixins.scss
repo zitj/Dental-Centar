@@ -13,10 +13,8 @@
     letter-spacing: 1px;
      &:hover{
          opacity: .8;
-         transform: scale(1.03);
      }
      &:active{
          opacity: 1;
-         transform: scale(1);
      }
  }
