@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 @import "./include-media.css";
 html{
     scroll-behavior: smooth;
@@ -11,7 +12,100 @@ body{
     font-family: 'Nunito', sans-serif;
     color: $dental-centar-blue;
 }
-
+.alert-success,
+.alert-error{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 5%;
+    animation: introHeading 1s ease-in-out;
+    @media (max-width: 420px) {
+        font-size: 1em;
+          }
+    @media (max-width: 320px) {
+        font-size: .7em;
+          }
+}
+.alert-success{
+    color: rgb(23, 165, 23);
+}
+.alert-error{
+    color: rgb(216, 20, 20);
+}
+.forma{
+    margin: 5% auto;
+    width: 80%;
+    text-align: center;
+    @media (max-width: 1024px) {
+        margin-top: 10%;
+          }
+    label{
+        font-size: 1.1em;
+        animation: introHeading;
+        animation-timing-function: ease-in-out;
+        &:nth-of-type(1){
+            animation-duration: .4s;
+        }
+        &:nth-of-type(2){
+            animation-duration: .8s;
+        }
+        &:nth-of-type(3){
+            animation-duration: 1.2s;
+        }
+        &:nth-of-type(4){
+            animation-duration: 1.6s;
+        }
+        &:nth-of-type(5){
+            animation-duration: 2s;
+        }
+    }
+    input,
+    textarea,
+    button{
+        width: 30%;
+        border-radius: 16px;
+        margin:5px 0 15px;
+        padding:10px;
+        border: none;
+        outline: none;
+        animation: dropMenu;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode:forwards;
+        font-family: 'Nunito', sans-serif;
+        &:focus{
+            border: 1px solid $dental-centar-blue;
+        }
+        @media (max-width: 1024px) {
+            width: 60%;
+              }
+        @media (max-width: 500px) {
+            width: 80%;
+              }
+        @media (max-width: 420px) {
+            width: 90%;
+              }
+    }
+    input{
+        &:nth-of-type(1){
+        animation-duration: 300ms;
+        }
+        &:nth-of-type(2){
+        animation-duration: 500ms;
+        }
+        &:nth-of-type(3){
+        animation-duration: 700ms;
+        }
+        &:nth-of-type(4){
+        animation-duration: 900ms;
+        }
+    }
+    textarea{
+        animation-duration: 1200ms;
+    }
+    .send-btn{
+        @include pinkButton();
+        animation-duration: 1400ms;
+    }
+}
 a{
     text-decoration: none;
     color: $dental-centar-blue;
@@ -21,6 +115,7 @@ button{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     user-select:none;
 }
+
 header{
     font-size: 1.1em;
     height: 50px;
@@ -201,6 +296,13 @@ header{
                 } 
     }
 }
+.centeredHeader{
+    justify-content: center;
+    a{
+        margin-left: -2%;
+    }
+}
+
 .section{
     height: 100vh;
     @media (max-width: 1024px) {
@@ -225,17 +327,7 @@ header{
               }
     }
 }
-.formSection{
-    width: 100%;
-    form{
-        z-index: 14000;
-        position: absolute;
-        top: 50%;        
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 150px;        
-    }
-}
+
 .priceListSection.hide{
     display: none;
 }
@@ -307,17 +399,7 @@ display: block;
         letter-spacing: 5px;
         font-weight: 300;
         animation: introHeading .4s ease-in-out;
-        @keyframes introHeading {
-            0%{
-                opacity: 0;
-                margin-top: 20px;
-            }
-            100%{
-                
-                opacity: 1;
-                
-            }
-        }
+   
         @media (max-width: 800px) {
         font-size: 2.8em;
                  }
@@ -573,29 +655,8 @@ display: block;
             
            }
        }
-       button{
-           padding: 15px 25px;
-           border-radius: 50px;
-           color: white;
-           background: $dental-centar-pink;
-           text-transform: uppercase;
-           border: none;
-           outline: none;
-           cursor: pointer;
-           border-bottom: 1px solid rgb(78, 0, 92);
-           transition: .2s ease-in-out;
-           letter-spacing: 1px;
-           @media (max-width: 1500px) {
-            font-size: .7em;
-            } 
-            &:hover{
-                opacity: .8;
-                transform: scale(1.03);
-            }
-            &:active{
-                opacity: 1;
-                transform: scale(1);
-            }
+       a{
+          @include pinkButton();
         }
     }
     .right{
@@ -764,6 +825,7 @@ display: block;
             &:nth-child(6){
                 background: url(../img/services/5.jpg) no-repeat 60% 60%;
              }
+            
            .content{
                background: #e19fffd2;
                height: 90%;
@@ -772,8 +834,25 @@ display: block;
                border-radius: 45px;
                position: relative;
                text-align: center;
+              
+               
                @media (max-width: 1024px) {
                 background: #7ab4dbda;
+                    }
+                    .contentText{
+                        display: none;
+                    }
+                    .contentText.active{
+                        display: block;
+                        padding: 10px;
+                        border-radius: 16px;
+                        margin-bottom: 10%;
+                        transition: .2s ease-in-out;
+                        p{
+                            color: white;
+                            font-size: 1.1em;
+                            text-align: center;
+                        }
                     } 
                h3{
                    color: white;
@@ -784,6 +863,7 @@ display: block;
                    margin-top: 35%;
                    margin-bottom: 10%;
                    user-select:none;
+                   transition: .2s ease-in-out;
                }
                a{
                    padding: 10px 15px;
@@ -791,19 +871,24 @@ display: block;
                    border-radius: 30px;
                    transition: .2s ease-in-out;
                    color: #8f2cbd;
+                   cursor: pointer;
+                   span{
+                       &:nth-child(2){
+                           display: none;
+                       }
+                   }
                    @media (max-width: 1024px) {
                     color: $dental-centar-blue;
                         } 
                    &:hover{
-                       font-size: 1.1em;
                        background: rgb(255, 255, 255);
                    }
                    &:active{
-                       font-size: .8em;
                        background: rgba(255, 255, 255, 0.815);
                    }
                }
            }
+          
          &:nth-child(3) .content,
          &:nth-child(5) .content{
              background: #7ab4dbda;
@@ -849,7 +934,72 @@ display: block;
                 color: #8f2cbd;
                 }
         }
-       
+       &.active{
+           .content{
+            
+                h3{
+                    margin-top: 10%;
+                  
+                }
+              a{
+                  position: absolute;
+                  bottom: 10%;
+                  left: 34%;
+                  animation: buttonDown .3s ease-in-out;
+                  @keyframes buttonDown {
+                      0%{
+                          opacity: 0;
+                      }
+                      100%{
+                         opacity: 1;
+                      }
+                  }
+                  span{
+                      &:nth-child(1){
+                          display: none;
+                      }
+                      &:nth-child(2){
+                          display: inline-block;
+                      }
+                  }
+              }
+           }
+           &:nth-child(2){
+            .content{
+                h3{
+                    margin-bottom: 7%;
+                }
+            }
+        }
+           &:nth-child(3){
+            .content{
+                h3{
+                    margin-bottom: 2%;
+                }
+            }
+        }
+           &:nth-child(4){
+            .content{
+                h3{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+           &:nth-child(5){
+            .content{
+                h3{
+                    margin-bottom:13%;
+                }
+            }
+        }
+           &:nth-child(6){
+            .content{
+                h3{
+                    margin-bottom: -2%;
+                }
+            }
+        }
+       }
         }
     }
   
@@ -1162,8 +1312,8 @@ display: block;
 }
 .overlayBackground{
     width: 100%;
-    height: 100vh;
-    position: fixed;
+    height: 800vh;
+    position: absolute;
     background: rgba(255, 255, 255, 0.979);
     z-index: 33;
     top: 0;
@@ -1185,5 +1335,16 @@ display: block;
     100%{
         opacity: 1;
         transform: rotateY(0deg) translateY(0px);
+    }
+}
+@keyframes introHeading {
+    0%{
+        opacity: 0;
+        margin-top: 20px;
+    }
+    100%{
+        
+        opacity: 1;
+        
     }
 }

@@ -5,8 +5,13 @@ const navButtons = navigation.querySelectorAll('a');
 const priceListButton = document.getElementById('priceListButton');
 const priceListSection = document.querySelector('.priceListSection');
 const closeButton = document.querySelector('.closeButton');
+const services = document.querySelectorAll('.service');
+const servicesButtons = document.querySelectorAll('.serviceButton');
+const content = document.querySelectorAll('content');
+const contentText = document.querySelectorAll('.contentText');
 
-console.log(closeButton);
+console.log(contentText);
+console.log(servicesButtons);
 
 hamburger.addEventListener('click', ()=>{
     navigation.classList.toggle('active');
@@ -41,3 +46,9 @@ closeButton.addEventListener('click', ()=>{
     priceListSection.classList.add('hide')
 });
 
+for (let i = 0; i < services.length; i++){
+    servicesButtons[i].addEventListener('click', ()=>{
+        services[i + 1].classList.toggle('active');
+        contentText[i].classList.toggle('active');
+    });
+}
