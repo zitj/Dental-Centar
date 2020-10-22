@@ -876,6 +876,8 @@ header nav a:hover {
   font-size: 3.5em;
   margin-bottom: 0;
   font-weight: 600;
+  -webkit-animation: dropMenu .6s ease-in-out;
+          animation: dropMenu .6s ease-in-out;
 }
 
 @media (max-width: 1500px) {
@@ -928,6 +930,8 @@ header nav a:hover {
   font-weight: 400;
   margin-bottom: 0;
   margin-top: -5px;
+  -webkit-animation: dropMenu .8s ease-in-out;
+          animation: dropMenu .8s ease-in-out;
 }
 
 @media (max-width: 1500px) {
@@ -978,6 +982,8 @@ header nav a:hover {
   font-size: 2.5em;
   margin: 0px 0 15px;
   font-weight: 300;
+  -webkit-animation: dropMenu 1s ease-in-out;
+          animation: dropMenu 1s ease-in-out;
 }
 
 @media (max-width: 1500px) {
@@ -1031,6 +1037,8 @@ header nav a:hover {
   transition: .2s ease-in-out;
   font-size: .7em;
   letter-spacing: 1px;
+  -webkit-animation: dropMenu 1.2s ease-in-out;
+          animation: dropMenu 1.2s ease-in-out;
 }
 
 .heroSection .left a:hover {
@@ -1048,6 +1056,8 @@ header nav a:hover {
   position: absolute;
   height: 800px;
   width: 800px;
+  -webkit-animation: introImg 1.3s ease-in-out;
+          animation: introImg 1.3s ease-in-out;
 }
 
 @media (max-width: 1500px) {
@@ -1125,6 +1135,12 @@ header nav a:hover {
   .heroSection .right img {
     right: 18%;
     top: -4%;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroSection .right img {
+    right: 14%;
   }
 }
 
@@ -2223,20 +2239,52 @@ header nav a:hover {
 @-webkit-keyframes introHeading {
   0% {
     opacity: 0;
-    margin-top: 20px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes introHeading {
   0% {
     opacity: 0;
-    margin-top: 20px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes introImg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes introImg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=style.css.map */
