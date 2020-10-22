@@ -1123,14 +1123,8 @@ header nav a:hover {
 
 @media (max-width: 360px) {
   .heroSection .right img {
-    right: 17.5%;
-    top: -6%;
-  }
-}
-
-@media (max-width: 360px) {
-  .heroSection .right img {
-    right: 14.5%;
+    right: 18.5%;
+    top: -4%;
   }
 }
 
