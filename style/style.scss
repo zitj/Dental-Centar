@@ -1016,6 +1016,9 @@ display: block;
             .content{
                 h3{
                     margin-bottom: 20%;
+                    @media (max-width: 1440px) {
+                        margin-bottom: 18%;
+                             }
                     @media (max-width: 1024px) {
                         margin-bottom: 15%;
                              }
@@ -1031,6 +1034,9 @@ display: block;
                 }
                 .contentText{
                     margin-bottom: 25%;
+                    @media (max-width: 1440px) {
+                        margin-bottom: 20%;
+                             }
                     @media (max-width: 1024px) {
                         margin-bottom: 15%;
                              }
@@ -1065,6 +1071,9 @@ display: block;
             .content{
                 h3{
                     margin-bottom: 15%;
+                    @media (max-width: 1440px) {
+                        margin-bottom: 10%;
+                             }
                     @media (max-width: 1024px) {
                         margin-bottom: 10%;
                              }
@@ -1083,6 +1092,9 @@ display: block;
                 }
                 .contentText{
                     margin-bottom: 20%;
+                    @media (max-width: 1440px) {
+                        margin-bottom: 18%;
+                             }
                     @media (max-width: 1024px) {
                         margin-bottom: 15%;
                              }
