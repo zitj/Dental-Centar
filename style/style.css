@@ -162,7 +162,7 @@ body {
 
 .forma .send-btn {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 13px 20px;
   border-radius: 50px;
   color: white;
   background: #d16eff;
@@ -173,6 +173,7 @@ body {
   border-bottom: 1px solid #4e005c;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  font-size: .7em;
   letter-spacing: 1px;
   -webkit-animation-duration: 1400ms;
           animation-duration: 1400ms;
@@ -1017,7 +1018,7 @@ header nav a:hover {
 
 .heroSection .left a {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 13px 20px;
   border-radius: 50px;
   color: white;
   background: #d16eff;
@@ -1028,6 +1029,7 @@ header nav a:hover {
   border-bottom: 1px solid #4e005c;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  font-size: .7em;
   letter-spacing: 1px;
 }
 
@@ -1108,6 +1110,7 @@ header nav a:hover {
     width: 250px;
     height: 250px;
     top: -8%;
+    right: 21%;
   }
 }
 
