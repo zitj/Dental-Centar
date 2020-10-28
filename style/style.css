@@ -1522,9 +1522,15 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 420px) {
+  .servicesSection .container .service.active:nth-child(3) .content h3 {
+    margin-bottom: 18%;
+  }
+}
+
 @media (max-width: 384px) {
   .servicesSection .container .service.active:nth-child(3) .content h3 {
-    margin-bottom: 10%;
+    margin-bottom: 13%;
   }
 }
 
@@ -1541,12 +1547,18 @@ header nav a:hover {
 }
 
 .servicesSection .container .service.active:nth-child(3) .content .contentText {
-  margin-bottom: 15%;
+  margin-bottom: 25%;
+}
+
+@media (max-width: 420px) {
+  .servicesSection .container .service.active:nth-child(3) .content .contentText {
+    margin-bottom: 16%;
+  }
 }
 
 @media (max-width: 384px) {
   .servicesSection .container .service.active:nth-child(3) .content .contentText {
-    margin-bottom: 12%;
+    margin-bottom: 14%;
   }
 }
 
@@ -1578,9 +1590,15 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 420px) {
+  .servicesSection .container .service.active:nth-child(4) .content h3 {
+    margin-bottom: 16%;
+  }
+}
+
 @media (max-width: 384px) {
   .servicesSection .container .service.active:nth-child(4) .content h3 {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
 }
 
@@ -1591,7 +1609,7 @@ header nav a:hover {
 }
 
 .servicesSection .container .service.active:nth-child(4) .content .contentText {
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 }
 
 @media (max-width: 1440px) {
@@ -1614,7 +1632,7 @@ header nav a:hover {
 
 @media (max-width: 384px) {
   .servicesSection .container .service.active:nth-child(4) .content .contentText {
-    margin-bottom: 15%;
+    margin-bottom: 12%;
   }
 }
 

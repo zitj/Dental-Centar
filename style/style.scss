@@ -998,8 +998,11 @@ display: block;
                     @media (max-width: 600px) {
                         margin-bottom: 20%;
                              }
+                    @media (max-width: 420px) {
+                        margin-bottom: 18%;
+                             }
                     @media (max-width: 384px) {
-                        margin-bottom: 10%;
+                        margin-bottom: 13%;
                              }
                     @media (max-width: 360px) {
                         margin-bottom: 6%;
@@ -1009,9 +1012,12 @@ display: block;
                              }
                 }
                 .contentText{
-                    margin-bottom: 15%;
+                    margin-bottom: 25%;
+                    @media (max-width: 420px) {
+                        margin-bottom: 16%;
+                             }
                     @media (max-width: 384px) {
-                        margin-bottom: 12%;
+                        margin-bottom: 14%;
                              }
                     @media (max-width: 320px) {
                         margin-bottom: 10%;
@@ -1032,15 +1038,18 @@ display: block;
                     @media (max-width: 600px) {
                         margin-bottom: 20%;
                             }
+                    @media (max-width: 420px) {
+                        margin-bottom: 16%;
+                            }
                     @media (max-width: 384px) {
-                        margin-bottom: 15%;
+                        margin-bottom: 10%;
                             }
                     @media (max-width: 320px) {
                         margin-bottom: 5%;
                             }
                 }
                 .contentText{
-                    margin-bottom: 25%;
+                    margin-bottom: 20%;
                     @media (max-width: 1440px) {
                         margin-bottom: 20%;
                              }
@@ -1051,7 +1060,7 @@ display: block;
                         margin-bottom: 20%;
                              }
                     @media (max-width: 384px) {
-                        margin-bottom: 15%;
+                        margin-bottom: 12%;
                              }
                     @media (max-width: 320px) {
                         margin-bottom: 8%;
