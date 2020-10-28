@@ -165,7 +165,7 @@ body {
   padding: 13px 20px;
   border-radius: 50px;
   color: white;
-  background: #d16eff;
+  background: #eb7dff;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -1027,7 +1027,7 @@ header nav a:hover {
   padding: 13px 20px;
   border-radius: 50px;
   color: white;
-  background: #d16eff;
+  background: #eb7dff;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -1531,12 +1531,6 @@ header nav a:hover {
 @media (max-width: 384px) {
   .servicesSection .container .service.active:nth-child(3) .content h3 {
     margin-bottom: 13%;
-  }
-}
-
-@media (max-width: 360px) {
-  .servicesSection .container .service.active:nth-child(3) .content h3 {
-    margin-bottom: 6%;
   }
 }
 
